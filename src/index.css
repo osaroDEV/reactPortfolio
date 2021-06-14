@@ -1,13 +1,113 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 240px;
+  transition: all 3s linear;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+:root {
+  --mg-rt-25: 0.25em;
+  --mg-rt-5: 0.5em;
+  --mg-lt-5: 0.5em;
+  --ctr: 0 auto;
+  --mg-rt-10: 1em;
+  --mg-lt-10: 1em;
+}
+
+.container {
+  transition: all 0.3s linear;
+  height: 100vh;
+}
+/* header */
+
+.header {
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid;
+  z-index: 1;
+}
+
+.header img {
+  width: 80px;
+  margin-left: var(--mg-lt-5);
+}
+
+/* theme-switch */
+.theme-container {
+  /* padding: 0.25rem; */
+  background-color: #222;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 3.3rem;
+  height: 2.1rem;
+  position: relative;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.sun {
+  color: yellow;
+}
+
+.moon {
+  color: #fff;
+}
+
+.darkContainer {
+  background-color: #aaa;
+}
+
+.switch {
+  background-color: #222;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  border: 2px solid yellow;
+  position: absolute;
+  transform: translate(0.7rem, -0.1rem);
+  transition: transform 0.2s linear;
+}
+
+.move {
+  transform: translate(-0.7rem, -0.1rem);
+  border: 2px solid #fff;
+  background-color: #aaa;
+}
+
+.bright {
+  color: #000;
+  background-color: #fff;
+}
+
+/* light & dark classes */
+.dark {
+  color: #fff;
+  background-color: #000;
+}
+
+/* hamburger */
+
+.hamburger-container {
+  cursor: pointer;
+  margin-right: var(--mg-rt-5);
+}
+
+.icon {
+  font-size: 3rem;
 }
