@@ -1,5 +1,5 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Exo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -19,33 +19,57 @@ html {
 }
 
 :root {
-  --mg-rt-25: 0.25em;
-  --mg-rt-5: 0.5em;
-  --mg-lt-5: 0.5em;
-  --ctr: 0 auto;
-  --mg-rt-10: 1em;
-  --mg-lt-10: 1em;
+  /* margins */
+  --mg-25: 0.25em;
+  --mg-5: 0.5em;
+  --mg-10: 1em;
+  --mg-20: 2em;
+  --mg-ctr: 0 auto;
+
+  /* font sizes */
+  --fs-5: 0.5rem;
+  --fs-10: 1rem;
+  --fs-20: 2rem;
+  --fs-30: 3rem;
+
+  /* positioning */
+  --pos-025: 0.25em;
+  --pos-05: 0.5em;
+  --pos-10: 1em;
+  --pos-20: 2em;
+  --pos-30: 3em;
 }
 
-.container {
+.main-container {
   transition: all 0.3s linear;
-  height: 100vh;
+  height: 200vh;
 }
-/* header */
+
+.centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* header -----------------------------------------*/
 
 .header {
+  position: relative;
   height: 4em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   border-bottom: 2px solid;
   z-index: 1;
 }
 
 .header img {
   width: 80px;
-  margin-left: var(--mg-lt-5);
+  cursor: pointer;
 }
+
+/* .inner-header {
+  background-color: red;
+  height: 90%;
+
+} */
 
 /* theme-switch */
 .theme-container {
@@ -104,10 +128,161 @@ html {
 /* hamburger */
 
 .hamburger-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: var(--pos-05);
   cursor: pointer;
-  margin-right: var(--mg-rt-5);
 }
 
+/* arrow icon */
 .icon {
-  font-size: 3rem;
+  font-size: var(--fs-30);
+}
+
+.up-arrow {
+  position: fixed;
+  right: var(--pos-025);
+  bottom: var(--pos-30);
+}
+
+/* main ---------------------------------------- */
+/* content container */
+.content-container {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+@media (min-width: 321px) {
+  .content-container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 750px) {
+  .content-container {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: 845px) {
+  .content-container {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+/* intro */
+.intro {
+  margin-top: var(--mg-20);
+}
+
+.intro h1 {
+  font-size: 3.4375rem;
+}
+
+@media (min-width: 750px) {
+  .intro {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* intro image */
+.bio-image {
+  display: block;
+  width: 80%;
+  min-width: 200px;
+  max-width: 250px;
+  height: auto;
+  min-height: 200px;
+  max-height: 250px;
+  border: 10px solid rgb(223, 186, 20);
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 1.5em;
+}
+
+.bio-image:hover {
+  border-radius: 0;
+}
+
+@media (min-width: 750px) {
+  .bio-image {
+    max-width: 330px;
+    max-height: 330px;
+    margin-left: 2em;
+    margin-bottom: auto;
+    order: 1;
+  }
+}
+
+  /* caption */
+  div .caption {
+  text-align: center;
+  }
+
+  /* section header */
+  .section-header {
+  margin-top: 0.5em;
+  padding: 0.25em 0.5em;
+  background-color: rgb(223, 186, 20);
+  display: inline-block;
+  border-radius: 0 1.28em 0 1.28em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* title */
+.title {
+  margin-top: 1em;
+}
+
+.title * {
+  display: inline-block;
+}
+
+.brief-bio {
+  line-height: 1.5em;
+  margin-top: 1em;
+}
+
+.proj {
+  cursor: not-allowed;
+}
+
+.btn {
+  display: inline-block;
+  font-family: 'Exo', serif;
+  font-size: 1em;
+  margin: 1em auto auto auto;
+  padding: 0.5em 0;
+  border-radius: 0.375em;
+  background-color: #fc3549;
+  /* border: 1px solid #fc3549; */
+  border: 2px solid red;
+  color: #fff;
+  border: none;
+  width: 80%;
+  max-width: 250px;
+  cursor: pointer;
+  box-shadow: 0px 9px 29px rgba(252, 53, 73, 0.22);
+}
+
+.btn .sideIcon {
+  margin-left: 0.5em;
+}
+.btn:hover {
+  /* background-color: #c20d1f; */
+  background-color: rgb(153, 16, 16);
+}
+.btn:active {
+  /* background-color: #c20d1f; */
+  background-color: red;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 5px lightskyblue;
 }

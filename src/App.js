@@ -2,16 +2,23 @@ import React from 'react';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import { useGlobalContext } from './context';
+import { CgChevronUpO } from 'react-icons/cg';
+import ThemeSwitch from './components/ThemeSwitch';
+import Intro from './components/Intro'
 
 function App() {
   const { darkMode } = useGlobalContext();
   return (
-    <main className={`container ${darkMode ? 'dark' : 'bright'}`}>
-      <div className='padded'>
+    <main className={`main-container ${darkMode ? 'dark' : 'bright'}`}>
         <Header />
-        <h1>hello</h1>
+        <span className='fixedIcons up-arrow'>
+          <ThemeSwitch />
+          <CgChevronUpO className='icon' />
+        </span>
+        <section className="content-container">
+          <Intro />
+        </section>
         <Footer />
-      </div>
     </main>
   );
 }
