@@ -1,7 +1,7 @@
 import React from 'react';
 import Hamburger from './Hamburger';
-// import NavBar from './NavBar';
-import ThemeSwitch from './ThemeSwitch';
+import NavBar from './NavBar';
+// import ThemeSwitch from './ThemeSwitch';
 // import logo from './logo.png';
 // import logolight from './logo-lgt.png';
 import lightlogo from './lightlogo.png';
@@ -12,13 +12,16 @@ const Header = () => {
   const { darkMode } = useGlobalContext();
 
   return (
-    <section className='header'>
+    <section href='#top' className='header'>
       {/* <img src={`${darkMode?logolight:logo}`} alt='osaro-logo' /> */}
-      <img src={`${darkMode ? darklogo : lightlogo}`} alt='osaro-logo' />
-      <ThemeSwitch />
+       <img
+        className='centerer'
+        src={`${darkMode ? darklogo : lightlogo}`}
+        alt='osaro-logo'
+      /> 
       <div>
         <Hamburger />
-        {/* <NavBar /> */}
+        <NavBar />
       </div>
     </section>
   );

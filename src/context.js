@@ -3,11 +3,11 @@ const ContextProvider = React.createContext();
 
 const AppContext = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <ContextProvider.Provider
-      value={{ darkMode, setDarkMode, isOpen, setIsOpen }}
+      value={{ darkMode, setDarkMode, modalOpen, setModalOpen }}
     >
       {children}
     </ContextProvider.Provider>
