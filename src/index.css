@@ -1,11 +1,11 @@
 body {
-  font-family: 'Exo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Exo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-width: 240px;
-  transition: all 3s linear;
+  /* transition: all 3s linear; */
 }
 
 * {
@@ -16,6 +16,7 @@ body {
 
 html {
   font-size: 16px;
+scroll-behavior: smooth;  
 }
 
 :root {
@@ -38,6 +39,11 @@ html {
   --pos-10: 1em;
   --pos-20: 2em;
   --pos-30: 3em;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
 }
 
 .main-container {
@@ -118,32 +124,91 @@ html {
   color: #000;
   background-color: #fff;
 }
+.brightTrans {
+  color: #000;
+}
 
 /* light & dark classes */
 .dark {
   color: #fff;
   background-color: #000;
 }
+.darkTrans {
+  color: #fff;
+}
 
 /* hamburger */
-
 .hamburger-container {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: var(--pos-05);
   cursor: pointer;
+  z-index: 100;
+}
+/* links menu */
+.menu-icon {
+  font-size: var(--fs-20);
+}
+
+/* menu modal */
+.modal-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(223, 186, 20);
+  margin-top: 4em;
+  width: 100%;
+  height: 100vh;
+  transition: all 3s linear;
+  /* opacity: 0; */
+}
+
+/* .add-opacity {
+  opacity: 1;
+} */
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid; */
+  height: 40%;
+font-size: 1.75rem;
+font-weight: 900;
+}
+
+ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* links-container */
+.no-links {
+  display: none;
 }
 
 /* arrow icon */
-.icon {
-  font-size: var(--fs-30);
+.up-icon {
+  font-size: var(--fs-20);
+  /* color: #000; */
 }
 
-.up-arrow {
+.fixed-container-arrow {
   position: fixed;
   right: var(--pos-025);
+  bottom: var(--pos-20);
+  /* border: 1px solid red; */
+}
+
+.fixed-container-switch {
+  position: fixed;
+  left: var(--pos-025);
   bottom: var(--pos-30);
+  /* border: 1px solid red; */
 }
 
 /* main ---------------------------------------- */
@@ -221,13 +286,13 @@ html {
   }
 }
 
-  /* caption */
-  div .caption {
+/* caption */
+div .caption {
   text-align: center;
-  }
+}
 
-  /* section header */
-  .section-header {
+/* section header */
+.section-header {
   margin-top: 0.5em;
   padding: 0.25em 0.5em;
   background-color: rgb(223, 186, 20);
@@ -285,4 +350,10 @@ html {
   background-color: red;
   border: 2px solid #fff;
   box-shadow: 0 0 0 5px lightskyblue;
+}
+
+.foo {
+  margin-top: 400px;
+  height: 100px;
+  background-color: red;
 }

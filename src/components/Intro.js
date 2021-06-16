@@ -1,11 +1,19 @@
 import React from 'react';
 import portrait from './portrait.jpg';
 import { FaFileAlt, FaRegStar } from 'react-icons/fa';
+import {motion} from 'framer-motion'
 
 const Intro = () => {
   return (
     <div className='intro'>
-      <img src={portrait} className='bio-image' alt='Osaro Onaiwu' />
+      <motion.img
+        initial={{opacity: 0}}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5 }}
+        src={portrait}
+        className='bio-image'
+        alt='Osaro Onaiwu'
+      />
       <div className='caption'>
         <p className='section-header'>Hello, I am</p>
         <h1 className='name'>Osaro Onaiwu</h1>
