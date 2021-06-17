@@ -16,7 +16,7 @@ body {
 
 html {
   font-size: 16px;
-scroll-behavior: smooth;  
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -48,7 +48,7 @@ scroll-behavior: smooth;
 
 .main-container {
   transition: all 0.3s linear;
-  height: 200vh;
+  height: 300vh;
 }
 
 .centerer {
@@ -79,13 +79,14 @@ scroll-behavior: smooth;
 
 /* theme-switch */
 .theme-container {
-  /* padding: 0.25rem; */
+  padding: 0.3rem;
   background-color: #222;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  width: 3.3rem;
-  height: 2.1rem;
+  width: 2.1rem;
+  height: 3.3rem;
   position: relative;
   border-radius: 1rem;
   cursor: pointer;
@@ -110,12 +111,14 @@ scroll-behavior: smooth;
   border-radius: 50%;
   border: 2px solid yellow;
   position: absolute;
-  transform: translate(0.7rem, -0.1rem);
+  /* transform: translate(-0.1rem, 0.7rem); */
+  transform: translateY(0.7rem);
   transition: transform 0.2s linear;
+  /* display: none; */
 }
 
 .move {
-  transform: translate(-0.7rem, -0.1rem);
+  transform: translateY(-0.7rem);
   border: 2px solid #fff;
   background-color: #aaa;
 }
@@ -177,8 +180,8 @@ scroll-behavior: smooth;
   align-items: center;
   /* border: 1px solid; */
   height: 40%;
-font-size: 1.75rem;
-font-weight: 900;
+  font-size: 1.75rem;
+  font-weight: 900;
 }
 
 ul a {
@@ -342,15 +345,150 @@ div .caption {
   margin-left: 0.5em;
 }
 .btn:hover {
-  /* background-color: #c20d1f; */
   background-color: rgb(153, 16, 16);
 }
 .btn:active {
-  /* background-color: #c20d1f; */
   background-color: red;
   border: 2px solid #fff;
   box-shadow: 0 0 0 5px lightskyblue;
 }
+
+/* Bio */
+.about {
+  text-align: left;
+  margin-top: 2em;
+  line-height: 1.5em;
+}
+.about h2 {
+  margin: 0.5em auto;
+  font-weight: 900;
+}
+.about > p {
+  margin-bottom: 0.5em;
+}
+.about span {
+  margin-bottom: 0.5em;
+  display: inline-block;
+}
+.social {
+  margin-bottom: 1em;
+  border: 1px solis;
+}
+
+.social a {
+  color: #000;
+}
+
+.sm-font {
+  font-size: 0.7rem;
+}
+
+.bio-icon-container {
+  width: 115px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bio-icon-container a {
+  height: 30px;
+}
+
+.bio-icon {
+  font-size: var(--fs-20);
+  transition: 0.3s all;
+}
+
+.bio-icon:hover {
+  color: rgb(223, 186, 20);
+}
+
+.light {
+  color: #fff;
+}
+
+/* Skills & Tools */
+.skills {
+  margin-bottom: 2em;
+  min-width: 256px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.icon-wrapper {
+  font-size: 3rem;
+}
+
+.skill-icons {
+  margin: 1em auto auto auto;
+  max-width: 800px;
+}
+
+.icon-set {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 100%;
+  /* max-width: 585px; */
+  max-width: 100%;
+  margin: auto;
+}
+
+@media (max-width: 379px) {
+  .icon-set {
+    justify-content: space-around;
+  }
+}
+
+.html {
+  color: rgb(249, 71, 7);
+}
+
+.css {
+  color: rgb(23, 35, 137);
+}
+
+.js {
+  color: rgb(223, 186, 20);
+}
+
+.react {
+  color: rgb(99, 71, 204);
+}
+
+.jquery {
+  color: rgb(58, 35, 107);
+}
+
+.git {
+  color: rgb(66, 105, 88);
+}
+
+.nodejs {
+  color: rgb(69, 8, 20);
+}
+
+.terminal {
+  color: rgb(136, 89, 203);
+}
+
+.sass {
+  color: rgb(247, 31, 162);
+}
+
+.figma {
+  color: rgb(34, 158, 6);
+}
+
+.devices {
+  color: rgb(82, 175, 134);
+}
+
+.layout {
+  color: rgb(138, 134, 13);
+}
+
 
 .foo {
   margin-top: 400px;
