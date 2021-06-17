@@ -9,13 +9,10 @@ const ThemeSwitch = () => {
       className={`theme-container ${darkMode ? 'darkContainer' : ''}`}
       onClick={() => setDarkMode(!darkMode)}
     >
-      <span className='moon'>
-        <FaMoon />
-      </span>
+        <FaMoon className='moon' />
       <div className={`switch ${darkMode ? 'move' : ''} `}></div>
-      <span className='sun'>
-        <FaSun />
-      </span>
+        <FaSun className='sun' />
+      
     </div>
   );
 };

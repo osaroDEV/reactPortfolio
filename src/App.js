@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
-import Footer from './components/Footer';
 import Header from './components/Header';
+import Intro from './components/Intro';
+import Bio from './components/Bio';
+import SkillsTools from './components/SkillsTools'
+import Footer from './components/Footer';
 import { useGlobalContext } from './context';
 import { CgChevronUpO } from 'react-icons/cg';
 import ThemeSwitch from './components/ThemeSwitch';
-import Intro from './components/Intro';
 import { motion } from 'framer-motion';
 
 function App() {
@@ -47,6 +49,8 @@ function App() {
       </motion.span>
       <section className='content-container'>
         <Intro />
+        <Bio />
+        <SkillsTools />
       </section>
       <div id='foo' className='foo'>
         <Footer />
