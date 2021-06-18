@@ -7,7 +7,12 @@ const Bio = () => {
   return (
     <>
       <div className='about'>
-        <div className='section-header sm-font'>more about Osaro</div>
+        <div
+          className='section-header sm-font'
+          style={{ lineHeight: 'initial' }}
+        >
+          more about Osaro
+        </div>
         <h2>About Me</h2>
         <p>Hey! I'm a front-end developer and UI/UX expert.</p>
 
