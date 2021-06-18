@@ -19,6 +19,22 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (min-width: 475px) {
+  html {
+    font-size: 18px;
+  }
+}
+/* @media (min-width: 750px) {
+  html {
+    font-size: 18px;
+  }
+} */
+@media (min-width: 845px) {
+  html {
+    font-size: 20px;
+  }
+}
+
 :root {
   /* margins */
   --mg-25: 0.25em;
@@ -40,6 +56,34 @@ html {
   --pos-20: 2em;
   --pos-30: 3em;
 }
+
+/* loader */
+.loader-container {
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+background-color: rgb(223, 186, 20);
+}
+
+.loader-logo-container {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 150px;
+  height: 65px;
+  
+  /* display:flex;
+  justify-content: center;
+  align-items: center; */
+  box-shadow: 3px 6px 15px rgba(0, 0,0 ,0.7), -3px -6px 15px rgba(0, 0,0 ,0.7);
+}
+
+.loader-logo-container img{
+  position: absolute;
+  padding: .9em 0 0 0;
+}
+
 
 .no-scroll {
   overflow: hidden;
@@ -384,7 +428,8 @@ div .caption {
 }
 
 .bio-icon-container {
-  width: 115px;
+  width: 42%;
+  max-width: 180px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -417,6 +462,68 @@ div .caption {
 
 .icon-wrapper {
   font-size: 3rem;
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.icon-wrapper span {
+  font-size: 0.6rem;
+  font-weight: 900;
+}
+
+@media (min-width: 540px) {
+  .icon-wrapper {
+    font-size: 3.5rem;
+  }
+  .icon-wrapper span {
+  font-size: 0.8rem;
+}
+}
+@media (min-width: 620px) {
+  .icon-wrapper {
+    font-size: 4rem;
+  }
+  .icon-wrapper span {
+  font-size: 1rem;
+}
+}
+@media (min-width: 710px) {
+  .icon-wrapper {
+    font-size: 4.5rem;
+  }
+  .icon-wrapper span {
+  font-size: 1.2rem;
+}
+}
+@media (min-width: 760px) {
+  .icon-wrapper {
+    font-size: 5.5rem;
+  }
+  .icon-wrapper span {
+  font-size: 1.5rem;
+}
+}
+@media (min-width: 845px) {
+  .icon-wrapper {
+    font-size: 4.5rem;
+  }
+  .icon-wrapper span {
+  font-size: 1.2rem;
+}
+}
+/* @media (min-width: 950px) {
+  .icon-wrapper {
+    font-size: 3rem;
+  }
+} */
+
+
+
+.icon-wrapper span {
+  font-size: 0.6rem;
 }
 
 .skill-icons {
@@ -424,14 +531,15 @@ div .caption {
   max-width: 800px;
 }
 
+
+
 .icon-set {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 100%;
-  min-width: 100%;
-  /* max-width: 585px; */
-  max-width: 100%;
+  /* width: 100%; */
+  min-width: 256px;
+  max-width: 710px;
   margin: auto;
 }
 
