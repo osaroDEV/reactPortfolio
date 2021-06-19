@@ -18,11 +18,11 @@ const Intro = () => {
         <p className='section-header'>Hello, I am</p>
         <h1 className='name'>Osaro Onaiwu</h1>
         <div className='title'>
-          <FaRegStar />
+          <FaRegStar className='icon-animate' />
           <p>developer & UI/UX expert</p>
         </div>
         <p className='brief-bio'>
-          I'm a front-end developer focused on fluency in React & Javascript
+          A front-end developer focused on fluency in React & Javascript
         </p>
         <a
           className='proj'
