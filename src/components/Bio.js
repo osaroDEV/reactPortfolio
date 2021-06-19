@@ -14,8 +14,6 @@ const Bio = () => {
           more about Osaro
         </div>
         <h2>About Me</h2>
-        <p>Hey! I'm a front-end developer and UI/UX expert.</p>
-
         <p>
           I like creating beautiful web pages for businesses. Check out the
           projects section to view some of my creations.

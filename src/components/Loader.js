@@ -1,18 +1,14 @@
-import React from 'react'
-import loadlogo from './lightlogo.png';
+import React from 'react';
+import loaderlogo from './loaderlogo.png';
 
 const Loader = () => {
   return (
     <div className='loader-container'>
-      <section className='loader-logo-container'>
-        <img
-          className='centerer'
-          src={loadlogo}
-          alt='osaro-logo'
-        />
+      <section>
+        <img className='centerer' src={loaderlogo} alt='osarodev-logo' />
       </section>
     </div>
   );
-}
+};
 
-export default Loader
+export default Loader;
