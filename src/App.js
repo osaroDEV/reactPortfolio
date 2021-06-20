@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Intro from './components/Intro';
 import Bio from './components/Bio';
 import SkillsTools from './components/SkillsTools';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { useGlobalContext } from './context';
 import { CgChevronUpO } from 'react-icons/cg';
@@ -64,10 +65,9 @@ function App() {
         <Intro />
         <Bio />
         <SkillsTools />
+        <Contact />
       </section>
-      <div id='foo' className='foo'>
-        <Footer />
-      </div>
+      <Footer />
     </main>
   );
 }

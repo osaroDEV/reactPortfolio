@@ -68,13 +68,9 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: rgb(223, 186, 20); */
   background-image: linear-gradient(to bottom, rgb(223, 186, 20), #000);
 }
 
-/* .loader-logo-container img {
-  position: absolute;
-} */
 
 .no-scroll {
   overflow: hidden;
@@ -83,7 +79,6 @@ h2 {
 
 .main-container {
   transition: all 0.3s linear;
-  height: 500vh;
 }
 
 .centerer {
@@ -361,7 +356,9 @@ div .caption {
 .proj {
   cursor: not-allowed;
 }
-
+.caption a {
+  text-decoration: none;
+}
 .btn {
   display: inline-block;
   font-family: 'Exo', serif;
@@ -378,6 +375,12 @@ div .caption {
   max-width: 250px;
   cursor: pointer;
   box-shadow: 0px 9px 29px rgba(252, 53, 73, 0.22);
+}
+
+.flexed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn .sideIcon {
@@ -564,53 +567,68 @@ div .caption {
   }
 }
 
-/* .html {
-  color: rgb(249, 71, 7);
+/* contact form */
+form {
+  margin-bottom: 2em;
+  text-align: left;
 }
 
-.css {
-  color: rgb(23, 35, 137);
+form > p,
+.name-email-wrapper > p {
+  margin-top: 1em;
 }
 
-.js {
-  color: rgb(223, 186, 20);
+.name-email-wrapper input,
+textarea {
+  width: 100%;
+  background-color: #ccc;
+  color: #000;
+  border-width: 2px;
+  border-color: transparent transparent rgba(0, 0, 0, 0.3) transparent;
+  padding: 0.5em;
+  outline: none;
+  font-family: 'Exo', sans-serif;
 }
 
-.react {
-  color: rgb(99, 71, 204);
+.name-email-wrapper input:focus,
+textarea:focus {
+  border-color: rgb(223, 186, 20); 
 }
 
-.jquery {
-  color: rgb(58, 35, 107);
+
+label {
+  /* color: #555; */
+  font-size: 0.8rem;
 }
 
-.git {
-  color: rgb(66, 105, 88);
+.form-btn-margin {
+  display: block;
+  margin: 2em auto auto auto;
 }
 
-.nodejs {
-  color: rgb(69, 8, 20);
+.contact {
+  max-width: 660px;
+  margin: auto;
 }
 
-.terminal {
-  color: rgb(136, 89, 203);
+@media (min-width: 768px) {
+    .formstyle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .name-email-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .right,
+  .left {
+    width: 300px;
+  }
+  .right {
+    float: right;
+  }
 }
-
-.sass {
-  color: rgb(247, 31, 162);
-}
-
-.figma {
-  color: rgb(34, 158, 6);
-}
-
-.devices {
-  color: rgb(82, 175, 134);
-}
-
-.layout {
-  color: rgb(138, 134, 13);
-} */
 
 .foo {
   margin-top: 400px;

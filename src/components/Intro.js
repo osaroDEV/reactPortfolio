@@ -31,8 +31,10 @@ const Intro = () => {
           target='_blank'
         >
           <button className='btn'>
+            <div className='flexed'>
             <span>view resume</span>
             <FaFileAlt className='sideIcon' />
+            </div>
           </button>
         </a>
       </div>
