@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Intro from './components/Intro';
 import Bio from './components/Bio';
 import SkillsTools from './components/SkillsTools';
+import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { useGlobalContext } from './context';
@@ -34,7 +35,6 @@ function App() {
   }
   return (
     <main
-      // id='top'
       className={`main-container ${darkMode ? 'dark' : 'bright'} ${
         modalOpen ? 'no-scroll' : ''
       }`}
@@ -65,9 +65,12 @@ function App() {
         <Intro />
         <Bio />
         <SkillsTools />
+        <Projects />
         <Contact />
       </section>
-      <Footer />
+      <div id='#foo'>
+        <Footer />
+      </div>
     </main>
   );
 }
