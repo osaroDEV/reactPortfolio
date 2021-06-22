@@ -23,7 +23,7 @@ import {
 
 const SkillsTools = () => {
   return (
-    <div className='skills'>
+    <div id='tools' className='skills'>
       <div className='section-header sm-font'>my toolbox</div>
       <h2>Skills & Tools</h2>
       <div className='skill-icons'>

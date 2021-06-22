@@ -12,7 +12,7 @@ const Header = () => {
   const { darkMode } = useGlobalContext();
 
   return (
-    <section href='#top' className='header'>
+    <section className='header'>
       {/* <img src={`${darkMode?logolight:logo}`} alt='osaro-logo' /> */}
        <img
         className='centerer'

@@ -35,24 +35,28 @@ function App() {
   }
   return (
     <main
+      id='home'
       className={`main-container ${darkMode ? 'dark' : 'bright'} ${
         modalOpen ? 'no-scroll' : ''
       }`}
     >
       <Header />
-      <motion.span
+      {/* <motion.span
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
         className='fixed-container-arrow'
-      >
-        <a
-          className={`up-icon ${darkMode ? 'darkTrans' : 'brightTrans'}`}
+      > */}
+      <motion.a
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5 }}
+          className={`fixed-container-arrow up-icon ${darkMode ? 'darkTrans' : 'brightTrans'}`}
           href='#top'
         >
-          <CgChevronUpO />
-        </a>
-      </motion.span>
+          <CgChevronUpO className='up-icon' />
+        </motion.a>
+      {/* </motion.span> */}
       <motion.span
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -68,9 +72,7 @@ function App() {
         <Projects />
         <Contact />
       </section>
-      <div id='#foo'>
         <Footer />
-      </div>
     </main>
   );
 }
