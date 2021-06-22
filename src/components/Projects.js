@@ -5,7 +5,7 @@ import projectLinks from './projectLinks';
 const Projects = () => {
   const { darkMode } = useGlobalContext();
   return (
-    <div className='projects-link-container'>
+    <div id='projects' className='projects-link-container'>
       <h1 style={{ textAlign: 'center', marginBottom: '0.5em'}}>Projects</h1>
       <ul style={{ listStyle: 'none' }}>
         {projectLinks.map((links) => {

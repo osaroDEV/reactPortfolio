@@ -11,10 +11,10 @@ const NavBar = () => {
     >
       <ul className='modal-content'>
         {links.map((link) => {
-          const { id, li, url } = link;
+          const { id, name, url } = link;
           return (
             <a href={url} key={id} onClick={()=>setModalOpen(!modalOpen)}>
-              {li}
+              {name}
             </a>
           );
         })}

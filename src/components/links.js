@@ -1,10 +1,11 @@
 export const links = [
-  { id: 1, li: 'Home', url: '#Home' },
+  { id: 1, name: 'Home', url: '#home' },
   {
     id: 2,
-    li: 'Projects',
-    url: '#Projects',
+    name: 'About',
+    url: '#about',
   },
-  { id: 3, li: 'Contact', url: '#Contact' },
-  { id: 4, li: 'Foo', url: '#foo' },
+  { id: 3, name: 'Tools', url: '#tools' },
+  { id: 4, name: 'Projects', url: '#projects' },
+  { id: 5, name: 'Contact', url: '#contact' },
 ];

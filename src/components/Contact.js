@@ -4,7 +4,7 @@ import { RiMailSendFill } from 'react-icons/ri';
 
 const Contact = () => {
   return (
-    <div className='contact' netlify>
+    <div id='contact' className='contact' netlify>
       <div className='section-header sm-font'>wanna reach me?</div>
       <h2>Contact Me</h2>
       <form

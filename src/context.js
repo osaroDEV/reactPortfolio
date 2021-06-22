@@ -8,7 +8,14 @@ const AppContext = ({ children }) => {
 
   return (
     <ContextProvider.Provider
-      value={{ isLoading, setIsLoading, darkMode, setDarkMode, modalOpen, setModalOpen }}
+      value={{
+        isLoading,
+        setIsLoading,
+        darkMode,
+        setDarkMode,
+        modalOpen,
+        setModalOpen,
+      }}
     >
       {children}
     </ContextProvider.Provider>

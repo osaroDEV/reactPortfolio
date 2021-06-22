@@ -6,7 +6,7 @@ const Bio = () => {
   const { darkMode } = useGlobalContext();
   return (
     <>
-      <div className='about'>
+      <div id='about' className='about'>
         <div
           className='section-header sm-font'
           style={{ lineHeight: 'initial' }}
