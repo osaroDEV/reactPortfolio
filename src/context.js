@@ -6,6 +6,14 @@ const AppContext = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
 
+  // const darkOpen = () => {
+  //   if (darkMode && modalOpen) {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  // }
+
   return (
     <ContextProvider.Provider
       value={{
@@ -14,7 +22,7 @@ const AppContext = ({ children }) => {
         darkMode,
         setDarkMode,
         modalOpen,
-        setModalOpen,
+        setModalOpen
       }}
     >
       {children}
