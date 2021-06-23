@@ -8,12 +8,11 @@ const Hamburger = () => {
   return (
     <div
       className='hamburger-container'
-      onClick={() => setModalOpen(!modalOpen)}
     >
       {modalOpen ? (
-        <CgClose className='menu-icon' />
+        <CgClose className='menu-icon' onClick={() => setModalOpen(false)} />
       ) : (
-        <CgMenuLeft className='menu-icon' />
+          <CgMenuLeft className='menu-icon' onClick={() => setModalOpen(true)} />
       )}
     </div>
   );

@@ -5,6 +5,7 @@ const AppContext = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [darkMode, setDarkMode] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
+  // const [width, setWidth] = useState(window.innerWidth);
 
   // const darkOpen = () => {
   //   if (darkMode && modalOpen) {
@@ -22,7 +23,7 @@ const AppContext = ({ children }) => {
         darkMode,
         setDarkMode,
         modalOpen,
-        setModalOpen
+        setModalOpen,
       }}
     >
       {children}
