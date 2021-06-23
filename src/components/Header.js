@@ -15,7 +15,7 @@ const Header = () => {
     <section className='header'>
       {/* <img src={`${darkMode?logolight:logo}`} alt='osaro-logo' /> */}
        <img
-        className='centerer'
+        className='logo'
         src={`${darkMode ? darklogo : lightlogo}`}
         alt='osaro-logo'
       /> 

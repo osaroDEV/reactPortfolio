@@ -71,7 +71,6 @@ h2 {
   background-image: linear-gradient(to bottom, rgb(223, 186, 20), #000);
 }
 
-
 .no-scroll {
   overflow: hidden;
   height: 100%;
@@ -81,11 +80,19 @@ h2 {
   transition: all 0.3s linear;
 }
 
-.centerer {
+.logo {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 2000;
+}
+
+@media (min-width: 750px) {
+  .logo {
+left: 20px;
+transform: translateY(-50%);
+  }
 }
 /* header -----------------------------------------*/
 
@@ -93,7 +100,7 @@ h2 {
   position: relative;
   height: 4em;
   border-bottom: 2px solid;
-  z-index: 1;
+  z-index: 1000;
 }
 
 .header img {
@@ -177,8 +184,15 @@ h2 {
   transform: translateY(-50%);
   right: var(--pos-05);
   cursor: pointer;
-  z-index: 100;
+  z-index: 2000;
 }
+
+@media (min-width: 750px) {
+  .hamburger-container {
+    display: none;
+  }
+}
+
 /* links menu */
 .menu-icon {
   font-size: var(--fs-20);
@@ -186,38 +200,79 @@ h2 {
 
 /* menu modal */
 .modal-container {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(223, 186, 20);
-  margin-top: 4em;
+  /* background-color: rgb(223, 186, 20); */
+  background-color: #fff;
+  top: 0;
   width: 100%;
-  height: 100vh;
-  transition: all 3s linear;
+  height: 0%;
+  transition: all 0.5s ease 0s;
+  z-index: 200;
 }
 
+.full-modal-container {
+  height: 100vh;
+}
 
 .modal-content {
-  display: flex;
+  display: none;
+  /* display: flex; */
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid; */
+  /* opacity: 0; */
   height: 40%;
   font-size: 1.75rem;
   font-weight: 900;
+  transition: all 0.5s ease 0s;
+  z-index: 500;
+}
+
+.full-modal-content {
+  display: flex;
+  /* opacity: 1; */
+}
+
+@media (min-width: 750px) {
+  .modal-container {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 50%;
+    height: auto;
+    transition: none;
+  }
+  .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 900;
+    transition: none;
+  }
+
+  .modal-container a {
+    padding: 0.5em 0.75em;
+  }
 }
 
 @media (orientation: landscape) {
   .modal-content {
-    justify-content: flex-end;
+    justify-content: space-around;
+    font-weight: 400;
+    height: 60%;
   }
 }
 ul a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 /* links-container */
@@ -593,9 +648,8 @@ textarea {
 
 .name-email-wrapper input:focus,
 textarea:focus {
-  border-color: rgb(223, 186, 20); 
+  border-color: rgb(223, 186, 20);
 }
-
 
 label {
   /* color: #555; */
@@ -609,7 +663,7 @@ label {
 
 /* project */
 .projects-link-container {
-  margin: 2em 0; 
+  margin: 2em 0;
   list-style: none;
   text-align: left;
 }
@@ -633,7 +687,7 @@ label {
 }
 
 @media (min-width: 768px) {
-    .formstyle {
+  .formstyle {
     display: flex;
     flex-direction: column;
     width: 100%;

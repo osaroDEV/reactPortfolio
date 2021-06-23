@@ -7,13 +7,13 @@ const NavBar = () => {
 
   return (
     <section
-      className={`modal-container ${modalOpen ? '' : 'no-links'}`}
+      className={`modal-container ${modalOpen ? 'full-modal-container' : ''}`}
     >
-      <ul className='modal-content'>
+      <ul className={`modal-content ${modalOpen ? 'full-modal-content' : ''}`}>
         {links.map((link) => {
           const { id, name, url } = link;
           return (
-            <a href={url} key={id} onClick={()=>setModalOpen(!modalOpen)}>
+            <a href={url} key={id} onClick={() => setModalOpen(!modalOpen)}>
               {name}
             </a>
           );
