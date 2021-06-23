@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     modalOpen
       ? (document.body.style.overflow = 'hidden')
-      : (document.body.style.overflow = '');
+      : (document.body.style.overflow = 'scroll');
   }, [modalOpen]);
 
   useEffect(() => {
@@ -51,11 +51,13 @@ function App() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
-          className={`fixed-container-arrow up-icon ${darkMode ? 'darkTrans' : 'brightTrans'}`}
-          href='#top'
-        >
-          <CgChevronUpO className='up-icon' />
-        </motion.a>
+        className={`fixed-container-arrow up-icon ${
+          darkMode ? 'darkTrans' : 'brightTrans'
+        }`}
+        href='#top'
+      >
+        <CgChevronUpO className='up-icon' />
+      </motion.a>
       {/* </motion.span> */}
       <motion.span
         initial={{ opacity: 0 }}
@@ -72,7 +74,7 @@ function App() {
         <Projects />
         <Contact />
       </section>
-        <Footer />
+      <Footer />
     </main>
   );
 }
