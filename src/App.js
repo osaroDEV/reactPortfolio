@@ -16,6 +16,10 @@ function App() {
   const { isLoading, setIsLoading, darkMode, modalOpen } = useGlobalContext();
 
   useEffect(() => {
+    document.body.style.overflowX = 'hidden';
+  }, []);
+
+  useEffect(() => {
     modalOpen
       ? (document.body.style.overflow = 'hidden')
       : (document.body.style.overflow = 'scroll');

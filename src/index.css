@@ -5,7 +5,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-width: 240px;
-  /* transition: all 3s linear; */
 }
 
 * {
@@ -89,8 +88,8 @@ h2 {
 
 @media (min-width: 750px) {
   .logo {
-left: 20px;
-transform: translateY(-50%);
+    left: 20px;
+    transform: translateY(-50%);
   }
 }
 /* header -----------------------------------------*/
@@ -411,9 +410,11 @@ div .caption {
 .proj {
   cursor: not-allowed;
 }
+
 .caption a {
   text-decoration: none;
 }
+
 .btn {
   display: inline-block;
   font-family: 'Exo', serif;
@@ -421,8 +422,10 @@ div .caption {
   margin: 1em auto auto auto;
   padding: 0.75em 0;
   border-radius: 0.375em;
-  background-color: #fc3549;
-  /* border: 1px solid #fc3549; */
+  /* background-color: #fc3549; */
+  /* border: 2px solid red;*/
+  /* color: #fff; */
+  background-color: red;
   border: 2px solid red;
   color: #fff;
   border: none;
@@ -430,7 +433,26 @@ div .caption {
   max-width: 250px;
   cursor: pointer;
   box-shadow: 0px 9px 29px rgba(252, 53, 73, 0.22);
+  animation: shake 1s linear infinite;
 }
+
+/* @keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+} */
 
 .flexed {
   display: flex;
@@ -441,11 +463,17 @@ div .caption {
 .btn .sideIcon {
   margin-left: 0.5em;
 }
+
 .btn:hover {
-  background-color: rgb(153, 16, 16);
+  /* background-color: rgb(153, 16, 16); */
+  background-color: #fff;
+  color: red;
+  border: 1px solid red;
 }
+
 .btn:active {
   background-color: red;
+  color: #fff;
   border: 2px solid #fff;
   box-shadow: 0 0 0 5px lightskyblue;
 }
@@ -624,7 +652,7 @@ div .caption {
 
 /* contact form */
 form {
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   text-align: left;
 }
 
@@ -673,6 +701,12 @@ label {
   align-items: flex-start;
 }
 
+@media (min-width: 750px) {
+  .projects-link-container ul {
+    margin-left: 4rem;
+  }
+}
+
 .projects-link-container li {
   font-size: 1.2rem;
   font-weight: 900;
@@ -704,8 +738,13 @@ label {
   }
 }
 
-.foo {
-  margin-top: 400px;
-  height: 100px;
-  background-color: red;
+.copy  {
+  cursor: pointer;
+  color: rgba(0,0,0,0.5);
+  transition: all 0.3s linear;
+}
+
+.copy:hover  {
+  
+  color: rgba(0,0,0);
 }
