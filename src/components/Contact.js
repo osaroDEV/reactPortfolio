@@ -1,10 +1,12 @@
 import React from 'react';
-// import {BiMailSend} from 'react-icons/bi'
-import { RiMailSendFill } from 'react-icons/ri';
+import { RiMailSendFill, RiFileCopyLine } from 'react-icons/ri';
+import { useGlobalContext } from '../context';
 
 const Contact = () => {
+  const { email } = useGlobalContext();
+
   return (
-    <div id='contact' className='contact' netlify>
+    <div id='contact' className='contact'>
       <div className='section-header sm-font'>wanna reach me?</div>
       <h2>Contact Me</h2>
       <form
@@ -37,14 +39,29 @@ const Contact = () => {
             required
           ></textarea>
         </p>
-        <p>
+        <section>
           <button className='btn form-btn-margin' type='submit'>
             <div className='flexed'>
               <span>send</span>
               <RiMailSendFill className='sideIcon' />
             </div>
           </button>
-        </p>
+          <p
+            style={{
+              marginTop: '2rem',
+              fontSize: '0.8rem',
+              textAlign: 'center',
+            }}
+          >
+            or email me at {email}{' '}
+            <RiFileCopyLine
+              className='copy'
+              onClick={() => {
+                navigator.clipboard.writeText(email);
+              }}
+            />
+          </p>
+        </section>
       </form>
     </div>
   );

@@ -31,7 +31,7 @@ const Intro = () => {
           target='_blank'
         >
           <button className='btn'>
-            <div className='flexed'>
+            <div className='flexed btn-animate'>
             <span>view resume</span>
             <FaFileAlt className='sideIcon' />
             </div>
