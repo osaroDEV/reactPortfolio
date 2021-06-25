@@ -232,7 +232,6 @@ h2 {
 
 .full-modal-content {
   display: flex;
-  /* opacity: 1; */
 }
 
 @media (min-width: 750px) {
@@ -241,7 +240,7 @@ h2 {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-    width: 50%;
+    width: 40%;
     height: auto;
     transition: none;
   }
@@ -274,6 +273,10 @@ ul a {
 }
 
 /* links-container */
+.link:hover {
+  color: blue;
+}
+
 .no-links {
   display: none;
 }
@@ -288,8 +291,7 @@ ul a {
 .fixed-container-arrow {
   position: fixed;
   right: var(--pos-025);
-  height: var(--fs-20);
-  bottom: 3.59rem;
+  bottom: 3rem;
 }
 
 .fixed-container-switch {
@@ -468,7 +470,7 @@ div .caption {
   /* background-color: rgb(153, 16, 16); */
   background-color: #fff;
   color: red;
-  border: 1px solid red;
+  /* border: 2px solid red; */
 }
 
 .btn:active {
@@ -701,6 +703,14 @@ label {
   align-items: flex-start;
 }
 
+.project-link {
+  transition: all 0.3s linear;
+}
+
+.project-link:hover {
+  transform: translate(1rem);
+}
+
 @media (min-width: 750px) {
   .projects-link-container ul {
     margin-left: 4rem;
@@ -742,9 +752,9 @@ label {
   cursor: pointer;
   color: rgba(0,0,0,0.5);
   transition: all 0.3s linear;
+  font-size: 1.2rem;
 }
 
 .copy:hover  {
-  
   color: rgba(0,0,0);
 }

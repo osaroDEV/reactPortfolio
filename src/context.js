@@ -6,7 +6,6 @@ const AppContext = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const email= 'osernon@gmail.com';
-  // const [width, setWidth] = useState(window.innerWidth);
 
   // const darkOpen = () => {
   //   if (darkMode && modalOpen) {
