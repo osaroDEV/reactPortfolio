@@ -18,7 +18,7 @@ const NavBar = () => {
             <a
               href={url}
               key={id}
-              className={`${
+              className={`link ${
                 darkMode && modalOpen ? 'darkTrans' : 'brightTrans'
               }`}
               onClick={() => setModalOpen(false)}

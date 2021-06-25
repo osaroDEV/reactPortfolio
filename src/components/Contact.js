@@ -53,7 +53,7 @@ const Contact = () => {
               textAlign: 'center',
             }}
           >
-            or email me at {email}{' '}
+            or email me at <strong>{email}</strong>{' '}
             <RiFileCopyLine
               className='copy'
               onClick={() => {
