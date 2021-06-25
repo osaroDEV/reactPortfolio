@@ -162,7 +162,7 @@ h2 {
   color: #000;
   background-color: #fff;
 }
-.brightTrans {
+.bright-color {
   color: #000;
 }
 
@@ -171,7 +171,7 @@ h2 {
   color: #fff;
   background-color: #000;
 }
-.darkTrans {
+.dark-color {
   color: #fff;
 }
 
@@ -748,13 +748,27 @@ label {
   }
 }
 
-.copy  {
+.copy {
   cursor: pointer;
-  color: rgba(0,0,0,0.5);
   transition: all 0.3s linear;
   font-size: 1.2rem;
 }
 
-.copy:hover  {
-  color: rgba(0,0,0);
+/* .icon-tooltip {
+  position: relative;
 }
+
+.tooltip {
+  position: absolute;
+  left: 50px;
+  visibility: hidden;
+  border: 1px solid green;
+}
+
+.icon-tooltip:hover .tooltip {
+  visibility: visible;
+}
+
+.copy:hover {
+  color: rgb(223, 186, 20);
+} */

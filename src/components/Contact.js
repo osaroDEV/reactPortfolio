@@ -3,7 +3,7 @@ import { RiMailSendFill, RiFileCopyLine } from 'react-icons/ri';
 import { useGlobalContext } from '../context';
 
 const Contact = () => {
-  const { email } = useGlobalContext();
+  const { email, darkMode, isTooltip, setIsTooltip } = useGlobalContext();
 
   return (
     <div id='contact' className='contact'>
@@ -54,12 +54,20 @@ const Contact = () => {
             }}
           >
             or email me at <strong>{email}</strong>{' '}
-            <RiFileCopyLine
-              className='copy'
-              onClick={() => {
-                navigator.clipboard.writeText(email);
-              }}
-            />
+            <span
+              className='icon-tooltip'
+              // onClick={() => setIsTooltip(!isTooltip)}
+            >
+              {/* <span className='tooltip'>{
+                isTooltip ? 'copied' : 'click'
+              }</span> */}
+              <RiFileCopyLine
+                className='copy'
+                onClick={() => {
+                  navigator.clipboard.writeText(email);
+                }}
+              />
+            </span>
           </p>
         </section>
       </form>

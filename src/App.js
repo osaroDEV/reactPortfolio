@@ -56,7 +56,7 @@ function App() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
         className={`fixed-container-arrow up-icon ${
-          darkMode ? 'darkTrans' : 'brightTrans'
+          darkMode ? 'dark-color' : 'bright-color'
         }`}
         href='#top'
       >
