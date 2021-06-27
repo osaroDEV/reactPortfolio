@@ -15,14 +15,14 @@ import { motion } from 'framer-motion';
 function App() {
   const { isLoading, setIsLoading, darkMode, modalOpen } = useGlobalContext();
 
-  useEffect(() => {
-    document.body.style.overflowX = 'hidden';
-  }, []);
+  // useEffect(() => {
+  //   document.body.style.overflowX = 'hidden';
+  // }, []);
 
   useEffect(() => {
     modalOpen
       ? (document.body.style.overflow = 'hidden')
-      : (document.body.style.overflow = 'scroll');
+      : (document.body.style.overflowY = 'scroll');
   }, [modalOpen]);
 
   useEffect(() => {
@@ -56,7 +56,7 @@ function App() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
         className={`fixed-container-arrow up-icon ${
-          darkMode ? 'darkTrans' : 'brightTrans'
+          darkMode ? 'dark-color' : 'bright-color'
         }`}
         href='#top'
       >
