@@ -93,7 +93,6 @@ h2 {
   }
 }
 /* header -----------------------------------------*/
-
 .header {
   position: relative;
   height: 4em;
@@ -162,6 +161,7 @@ h2 {
   color: #000;
   background-color: #fff;
 }
+
 .bright-color {
   color: #000;
 }
