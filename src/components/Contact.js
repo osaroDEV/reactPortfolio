@@ -1,9 +1,18 @@
 import React from 'react';
-import { RiMailSendFill, RiFileCopyLine } from 'react-icons/ri';
+import { RiMailSendFill } from 'react-icons/ri';
 import { useGlobalContext } from '../context';
 
 const Contact = () => {
-  const { email, darkMode, isTooltip, setIsTooltip } = useGlobalContext();
+  const { email } = useGlobalContext();
+
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     setIsHover(false);
+  //   }, 3000);
+  //   return () => {
+  //     clearTimeout(timeout);
+  //   };
+  // }, [setIsHover, isHover]);
 
   return (
     <div id='contact' className='contact'>
@@ -52,22 +61,10 @@ const Contact = () => {
               fontSize: '0.8rem',
               textAlign: 'center',
             }}
+            
           >
-            or email me at <strong>{email}</strong>{' '}
-            <span
-              className='icon-tooltip'
-              // onClick={() => setIsTooltip(!isTooltip)}
-            >
-              {/* <span className='tooltip'>{
-                isTooltip ? 'copied' : 'click'
-              }</span> */}
-              <RiFileCopyLine
-                className='copy'
-                onClick={() => {
-                  navigator.clipboard.writeText(email);
-                }}
-              />
-            </span>
+            or email me at <a href="mailto: osaronaiwu@yahoo.com"><strong className='email-tooltip'>{email}<span className='tooltip'>click</span></strong></a>
+            
           </p>
         </section>
       </form>

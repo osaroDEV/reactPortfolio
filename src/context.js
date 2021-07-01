@@ -5,16 +5,8 @@ const AppContext = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [darkMode, setDarkMode] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
-  const [isTooltip, setIsTooltip] = useState(false);
-  const email= 'osernon@gmail.com';
-
-  // const darkOpen = () => {
-  //   if (darkMode && modalOpen) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // }
+  const [isHover, setIsHover] = useState(false);
+  const email= 'osaronaiwu@yahoo.com';  
 
   return (
     <ContextProvider.Provider
@@ -25,8 +17,8 @@ const AppContext = ({ children }) => {
         setDarkMode,
         modalOpen,
         setModalOpen,
-        isTooltip,
-        setIsTooltip,
+        setIsHover,
+        isHover,
         email
       }}
     >
