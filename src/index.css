@@ -754,21 +754,36 @@ label {
   font-size: 1.2rem;
 }
 
-/* .icon-tooltip {
+.email-tooltip {
   position: relative;
 }
 
 .tooltip {
   position: absolute;
   left: 50px;
+  padding: 0.25em 0.5em;
+  /* bottom: 0; */
+  top: -30px;
   visibility: hidden;
-  border: 1px solid green;
+  background: rgb(223, 186, 20);
+  color: #fff;
+  /* border: 1px solid green; */
 }
 
-.icon-tooltip:hover .tooltip {
+.email-tooltip:hover .tooltip {
   visibility: visible;
 }
 
-.copy:hover {
+p a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+p a:hover {
+  cursor: pointer;
+}
+
+/*.copy:hover {
   color: rgb(223, 186, 20);
 } */
