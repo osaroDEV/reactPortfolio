@@ -175,6 +175,8 @@ h2 {
   color: #fff;
 }
 
+
+
 /* hamburger */
 .hamburger-container {
   position: absolute;
@@ -234,6 +236,24 @@ h2 {
   display: flex;
 }
 
+.modal-bright {
+  color: #000;
+  background-color: #fff;
+}
+
+.li-bright-color {
+  color: #000;
+}
+
+/* light & dark classes */
+.modal-dark {
+  color: #fff;
+  background-color: #000;
+}
+.li-dark-color {
+  color: #fff;
+}
+
 @media (min-width: 750px) {
   .modal-container {
     position: absolute;
@@ -257,7 +277,26 @@ h2 {
 
   .modal-container a {
     padding: 0.5em 0.75em;
+    color: inherit;
   }
+
+  .modal-bright {
+  color: inherit;
+  background-color: inherit;
+}
+
+.li-bright-color {
+  color: inherit;
+}
+
+/* light & dark classes */
+.modal-dark {
+  color: inherit;
+  background-color: inherit;
+}
+.li-dark-color {
+  color: inherit;
+}
 }
 
 @media (orientation: landscape) {
@@ -269,7 +308,7 @@ h2 {
 }
 ul a {
   text-decoration: none;
-  color: #000;
+  color: inherit;
 }
 
 /* links-container */
