@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <section
       className={`modal-container ${modalOpen ? 'full-modal-container' : ''} ${
-        darkMode && modalOpen ? 'dark' : 'bright'
+        darkMode && modalOpen ? 'modal-dark' : 'modal-bright'
       }`}
     >
       <ul className={`modal-content ${modalOpen ? 'full-modal-content' : ''}`}>
@@ -19,7 +19,7 @@ const NavBar = () => {
               href={url}
               key={id}
               className={`link ${
-                darkMode && modalOpen ? 'dark-color' : 'bright-color'
+                darkMode && modalOpen ? 'li-dark-color' : 'li-bright-color'
               }`}
               onClick={() => setModalOpen(false)}
             >
