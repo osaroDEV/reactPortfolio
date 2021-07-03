@@ -183,8 +183,13 @@ h2 {
   top: 50%;
   transform: translateY(-50%);
   right: var(--pos-05);
+  color: inherit;
   cursor: pointer;
   z-index: 2000;
+}
+
+.hamburger-container:visited {
+  border: 1px solid red;
 }
 
 @media (min-width: 750px) {
@@ -309,11 +314,12 @@ h2 {
 ul a {
   text-decoration: none;
   color: inherit;
+  font-weight: 900;
 }
 
 /* links-container */
 .link:hover {
-  color: blue;
+  color: rgb(223, 186, 20);
 }
 
 .no-links {
@@ -331,12 +337,14 @@ ul a {
   position: fixed;
   right: var(--pos-025);
   bottom: 3rem;
+  z-index: 10000;
 }
 
 .fixed-container-switch {
   position: fixed;
   left: var(--pos-025);
   bottom: var(--pos-30);
+  z-index: 10000;
 }
 
 /* main ---------------------------------------- */

@@ -6,7 +6,7 @@ const Hamburger = () => {
   const { modalOpen, setModalOpen } = useGlobalContext();
 
   return (
-    <div
+    <a href='#menu'
       className='hamburger-container'
     >
       {modalOpen ? (
@@ -14,7 +14,7 @@ const Hamburger = () => {
       ) : (
           <CgMenuLeft className='menu-icon' onClick={() => setModalOpen(true)} />
       )}
-    </div>
+    </a>
   );
 };
 
