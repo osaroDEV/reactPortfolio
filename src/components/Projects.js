@@ -1,34 +1,30 @@
 import React from 'react';
-import { useGlobalContext } from '../context';
+import UnitProject from './UnitProject';
 import projectLinks from './projectLinks';
 
+
 const Projects = () => {
-  const { darkMode } = useGlobalContext();
   return (
-    <div id='projects' className='projects-link-container'>
-      <h1 style={{ textAlign: 'center', marginBottom: '0.5em' }}>Projects</h1>
-      <ul style={{ listStyle: 'none' }}>
-        {projectLinks.map((links) => {
-          const { id, name, url } = links;
-          return (
-            <li
-              key={id}
-              className='project-link'
-              style={{ textShadow: '2px 2px 2px #ecd672' }}
-            >
-              <a
-                className={`${darkMode ? 'dark' : 'bright'}`}
-                href={url}
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <p>{name}</p>
-              </a>
-            </li>
-          );
+    <>
+      <h1 id='projects' style={{ textAlign: 'center', marginBottom: '0.5em' }}>
+        Projects
+      </h1>
+      <div
+        style={{
+          height: 'auto',
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'space-around',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          margin: '2rem 0',
+        }}
+      >
+        {projectLinks.map((project) => {
+          return <UnitProject key={project.id} {...project} />;
         })}
-      </ul>
-    </div>
+      </div>
+    </>
   );
 };
 
