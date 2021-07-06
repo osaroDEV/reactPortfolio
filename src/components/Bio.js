@@ -15,8 +15,17 @@ const Bio = () => {
         </div>
         <h2>About Me</h2>
         <p>
-          I like creating beautiful web pages for businesses. Check out the
-          projects section to view some of my creations.
+          I’ll help you build fast, accessible websites. If you have an idea for
+          a website or want to upgrade the one you currently use; check the{' '}
+          <a className='bio-a' href='#contact'>
+            contact
+          </a>{' '}
+          section. I am always honing my coding skills and also learning a
+          foreign language. In my free-time, I play chess mostly. Check out the{' '}
+          <a className='bio-a' href='#projects'>
+            projects
+          </a>{' '}
+          section to view some of my creations.
         </p>
         <span>Find me here:</span>
         <div className='social'>

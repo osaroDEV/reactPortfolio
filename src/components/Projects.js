@@ -6,7 +6,11 @@ import projectLinks from './projectLinks';
 const Projects = () => {
   return (
     <>
-      <h1 id='projects' style={{ textAlign: 'center', marginBottom: '0.5em' }}>
+      {' '}
+      <div id='projects' className='section-header sm-font' style={{ lineHeight: 'initial' }}>
+        my works
+      </div>
+      <h1 style={{ textAlign: 'center', marginBottom: '0.5em' }}>
         Projects
       </h1>
       <div
