@@ -10,9 +10,9 @@ const Projects = () => {
       <div id='projects' className='section-header sm-font' style={{ lineHeight: 'initial' }}>
         my works
       </div>
-      <h1 style={{ textAlign: 'center', marginBottom: '0.5em' }}>
+      <h2>
         Projects
-      </h1>
+      </h2>
       <div
         style={{
           height: 'auto',
