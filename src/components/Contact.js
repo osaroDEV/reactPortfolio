@@ -5,15 +5,6 @@ import { useGlobalContext } from '../context';
 const Contact = () => {
   const { email } = useGlobalContext();
 
-  // useEffect(() => {
-  //   const timeout = setTimeout(() => {
-  //     setIsHover(false);
-  //   }, 3000);
-  //   return () => {
-  //     clearTimeout(timeout);
-  //   };
-  // }, [setIsHover, isHover]);
-
   return (
     <div id='contact' className='contact'>
       <div className='section-header sm-font'>wanna reach me?</div>
@@ -63,7 +54,7 @@ const Contact = () => {
             }}
             
           >
-            or email me at <a href="mailto: osaronaiwu@yahoo.com"><strong className='email-tooltip'>{email}<span className='tooltip'>click</span></strong></a>
+            or email me at <a className='link-email' href="mailto: osaronaiwu@yahoo.com"><strong className='email-tooltip'>{email}<span className='tooltip'>click</span></strong></a>
             
           </p>
         </section>

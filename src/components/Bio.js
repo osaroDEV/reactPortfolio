@@ -14,19 +14,34 @@ const Bio = () => {
           more about Osaro
         </div>
         <h2>About Me</h2>
-        <p>
-          I’ll help you build fast, accessible websites. If you have an idea for
-          a website or want to upgrade the one you currently use; check the{' '}
-          <a className='bio-a' href='#contact'>
-            contact
-          </a>{' '}
-          section. I am always honing my coding skills and also learning a
-          foreign language. In my free-time, I play chess mostly. Check out the{' '}
-          <a className='bio-a' href='#projects'>
-            projects
-          </a>{' '}
-          section to view some of my creations.
-        </p>
+        <div>
+          <p>
+            I am always honing my coding skills and also learning a foreign
+            language.
+          </p>
+          <p>In my free-time, I play chess mostly.</p>
+
+          <p>
+            If you have an idea for a website or want to upgrade the one you
+            currently use, check the{' '}
+            <a className='bio-a' href='#contact'>
+              contact
+            </a>{' '}
+            section.
+          </p>
+          <p>
+            <strong style={{ textShadow: '2px 2px 2px #ecd672' }}>
+              I will help you build fast &amp; accessible websites.
+            </strong>{' '}
+          </p>
+          <p>
+            Check out the{' '}
+            <a className='bio-a' href='#projects'>
+              projects
+            </a>{' '}
+            section to view some of my creations.
+          </p>
+        </div>
         <span>Find me here:</span>
         <div className='social'>
           <section className='bio-icon-container'>

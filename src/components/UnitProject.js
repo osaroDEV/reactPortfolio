@@ -7,7 +7,7 @@ const Container = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.7);
   padding: 10px;
   position: relative;
-  fontsize: 0.5em;
+  font-size: 0.5em;
   margin: 1em;
   // border: 1px solid green;
   transition: all 0.2s ease-out 0s;

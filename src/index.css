@@ -318,8 +318,13 @@ ul a {
 }
 
 /* links-container */
+.link {
+  border-bottom: 1px solid transparent;
+}
+
 .link:hover {
   color: rgb(223, 186, 20);
+  border-bottom: 1px solid rgb(223, 186, 20);
 }
 
 .no-links {
@@ -543,9 +548,11 @@ div .caption {
   margin: 0.5em auto;
   font-weight: 900;
 }
-.about > p {
-  margin-bottom: 0.5em;
+
+.about p {
+  margin-bottom: .5em;
 }
+
 .about span {
   margin-bottom: 0.5em;
   display: inline-block;
@@ -807,6 +814,11 @@ label {
   font-size: 1.2rem;
 }
 
+.link-email {
+  color: rgb(223, 186, 20);
+  text-decoration: underline;
+}
+
 .email-tooltip {
   position: relative;
 }
@@ -815,10 +827,10 @@ label {
   position: absolute;
   left: 50px;
   padding: 0.25em 0.5em;
-  /* bottom: 0; */
+  border-radius: 5px;
   top: -30px;
   visibility: hidden;
-  background: rgb(223, 186, 20);
+  background: rgba(0,0,0,0.5);
   color: #fff;
   /* border: 1px solid green; */
 }
