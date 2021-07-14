@@ -6,6 +6,7 @@ const AppContext = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [isHover, setIsHover] = useState(false);
+  const [seeMore, setSeeMore] = useState(false);
   const email= 'osaronaiwu@yahoo.com';  
 
   return (

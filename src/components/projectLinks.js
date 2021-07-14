@@ -3,6 +3,7 @@ import bucketlist from './bucket-list.jpg';
 import portfolioWebsite from './portfolio-website.jpg';
 import weatherApp from './weather-app.jpg';
 import toursApp from './tours.jpg';
+import formApp from './controlled-form.jpg';
 
 const projectLinks = [
   {
@@ -34,6 +35,12 @@ const projectLinks = [
     title: 'Tour Destinations',
     url: 'https://tourmx.netlify.app',
     src: toursApp,
+  },
+  {
+    id: 6,
+    title: 'Form Control',
+    url: 'https://osarodev-form.netlify.app/',
+    src: formApp,
   },
 ];
 
