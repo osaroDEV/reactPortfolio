@@ -8,7 +8,7 @@ const Projects = () => {
     <>
       {' '}
       <div id='projects' className='section-header sm-font' style={{ lineHeight: 'initial' }}>
-        my works
+        what i've been working on
       </div>
       <h2>
         Projects

@@ -16,14 +16,40 @@ const Bio = () => {
         <h2>About Me</h2>
         <div>
           <p>
-            I am always honing my coding skills and also learning a foreign
-            language.
+            Hi there! My pseudo-name is{' '}
+            <strong style={{ textShadow: '2px 2px 2px #ecd672' }}>
+              osarodev
+            </strong>{' '}
+            and I love building things with code.
           </p>
-          <p>In my free-time, I play chess mostly.</p>
+          <p>
+            My first venture into coding was more than a decade ago when I got
+            introduced to now defunct programming languages like Visual Basic,
+            Fortran &amp; Pascal.
+          </p>
+          <p>
+            Unfortunately, tertiary education got in the way and I did not look
+            back.
+          </p>
+          <p>
+            After graduation, I got a job in the oil and gas sector as an Admin
+            Executive. I held this position for a few years and quit as I was
+            getting increasingly frustrated with the routine.
+          </p>
+          <p>
+            I had a lot of time to plan my next move. It was then it occurred to
+            me: I could start coding again. The difference this time around was
+            that the programming languages had become a lot more empowering.
+          </p>
+          <p>
+            I have been honing my coding skills since and also learning a
+            foreign language.
+          </p>
+          <p>I am currently seeking a remote or full-time role.</p>
 
           <p>
-            If you have an idea for a website or want to upgrade the one you
-            currently use, check the{' '}
+            I can freelance, in the meantime, hence if you have an idea for a
+            website or want to upgrade the one you currently use, check the{' '}
             <a className='bio-a' href='#contact'>
               contact
             </a>{' '}

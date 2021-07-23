@@ -26,7 +26,7 @@ const MoreIcon = styled.div`
   right: 0;
   height: 30px;
   width: 40px;
-  background: blue;
+  background: rgb(223, 186, 20);
   display: flex;
   justify-content: center;
   align-items: center;
