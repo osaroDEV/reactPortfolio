@@ -7,12 +7,13 @@ const Contact = () => {
 
   return (
     <div id='contact' className='contact'>
-      <div className='section-header sm-font'>let's build something together</div>
+      <div className='section-header sm-font'>
+        let's build something together
+      </div>
       <h2>Contact Me</h2>
       <form
         name='contact'
         method='POST'
-        data-netlify='true'
         className='formstyle'
       >
         <div className='name-email-wrapper'>
@@ -52,10 +53,14 @@ const Contact = () => {
               fontSize: '0.8rem',
               textAlign: 'center',
             }}
-            
           >
-            or email me at <a className='link-email' href="mailto: osaronaiwu@yahoo.com"><strong className='email-tooltip'>{email}<span className='tooltip'>click</span></strong></a>
-            
+            or email me at{' '}
+            <a className='link-email' href='mailto: osaronaiwu@yahoo.com'>
+              <strong className='email-tooltip'>
+                {email}
+                <span className='tooltip'>click</span>
+              </strong>
+            </a>
           </p>
         </section>
       </form>
