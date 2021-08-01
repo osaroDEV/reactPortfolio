@@ -11,11 +11,8 @@ const Contact = () => {
         let's build something together
       </div>
       <h2>Contact Me</h2>
-      <form
-        name='contact'
-        method='POST'
-        className='formstyle'
-      >
+      <form name='contact' method='POST' className='formstyle'>
+        <input type='hidden' name='form-name' value='contact' />
         <div className='name-email-wrapper'>
           <p className='left'>
             <label>Your Name:</label>
