@@ -5,7 +5,11 @@ import { motion } from 'framer-motion';
 
 const Intro = () => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='intro'>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className='intro'
+    >
       <motion.img
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -49,7 +53,7 @@ const Intro = () => {
         </motion.p>
         <a
           className='proj'
-          href='https://drive.google.com/file/d/1dg-OzrLflbhOBYnzqnwzfSKLZeJmTWAd/view?usp=sharing'
+          href='https://drive.google.com/file/d/1mCUlVDIMd11uk4pd8AR1HyiDDvvz3X31/view?usp=sharing'
           rel='noreferrer'
           target='_blank'
         >

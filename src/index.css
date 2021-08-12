@@ -493,7 +493,8 @@ div .caption {
   max-width: 250px;
   cursor: pointer;
   box-shadow: 0px 9px 29px rgba(252, 53, 73, 0.22);
-  animation: shake 1s linear infinite;
+  /* animation: shake 1s linear infinite; */
+  /* transition: all 0.3s ease-in-out; */
 }
 
 /* @keyframes shake {
@@ -528,7 +529,7 @@ div .caption {
   /* background-color: rgb(153, 16, 16); */
   background-color: #fff;
   color: red;
-  /* border: 2px solid red; */
+  border: 2px solid red;
 }
 
 .btn:active {
