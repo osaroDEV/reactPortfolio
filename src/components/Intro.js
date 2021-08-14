@@ -16,16 +16,16 @@ const Intro = () => {
         transition={{ delay: 1, duration: 0.5 }}
         src={portrait}
         className='bio-image'
-        alt='Osaro Onaiwu'
+        alt=''
       />
-      <div className='caption'>
-        <motion.p
+      <main className='caption'>
+        <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           className='section-header'
         >
           Hello, I am
-        </motion.p>
+        </motion.span>
         <motion.h1
           initial={{ opacity: 0, y: '40px' }}
           animate={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ const Intro = () => {
             </div>
           </button>
         </a>
-      </div>
+      </main>
     </motion.div>
   );
 };

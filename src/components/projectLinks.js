@@ -21,7 +21,7 @@ const projectLinks = [
   {
     id: 3,
     title: 'Portfolio Website',
-    url: 'https://osarodev.netlify.app',
+    url: 'https://osarodev.com',
     src: portfolioWebsite,
   },
   {

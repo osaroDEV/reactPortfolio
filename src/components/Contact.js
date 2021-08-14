@@ -7,31 +7,31 @@ const Contact = () => {
 
   return (
     <div id='contact' className='contact'>
-      <div className='section-header sm-font'>
+      <span className='section-header sm-font'>
         let's build something together
-      </div>
+      </span>
       <h2>Contact Me</h2>
       <form name='contact' method='POST' className='formstyle'>
         <input type='hidden' name='form-name' value='contact' />
         <div className='name-email-wrapper'>
           <p className='left'>
-            <label>Your Name:</label>
-            <input type='text' name='name' placeholder='John Smith' required />
+            <label for='name'>Your Name:</label>
+            <input type='text' id='name' placeholder='John Smith' required />
           </p>
           <p className='right'>
-            <label>Your Email:</label>
+            <label for='email'>Your Email:</label>
             <input
               type='email'
-              name='email'
+              id='email'
               placeholder='john_smith@osaro.com'
               required
             />
           </p>
         </div>
         <p>
-          <label>Message:</label>
+          <label for='message'>Message:</label>
           <textarea
-            name='message'
+            id='message'
             rows='4'
             placeholder='Guten Tag!'
             required
@@ -55,7 +55,7 @@ const Contact = () => {
             <a className='link-email' href='mailto: osaronaiwu@yahoo.com'>
               <strong className='email-tooltip'>
                 {email}
-                <span className='tooltip'>click</span>
+                <span className='tooltip'>click to redirect to compose box</span>
               </strong>
             </a>
           </p>

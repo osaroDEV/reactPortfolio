@@ -7,9 +7,9 @@ const Projects = () => {
   return (
     <>
       {' '}
-      <div id='projects' className='section-header sm-font' style={{ lineHeight: 'initial' }}>
+      <span id='projects' className='section-header sm-font' style={{ lineHeight: 'initial' }}>
         what i've been working on
-      </div>
+      </span>
       <h2>
         Projects
       </h2>

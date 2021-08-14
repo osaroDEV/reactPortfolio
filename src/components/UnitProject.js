@@ -40,7 +40,7 @@ const UnitProject = ({ id, title, src, url }) => {
       rel='noreferrer'
     >
       <Container>
-        <p
+        <h2
           style={{
             textAlign: 'left',
             fontWeight: 900,
@@ -49,7 +49,7 @@ const UnitProject = ({ id, title, src, url }) => {
           }}
         >
           {title}
-        </p>
+        </h2>
         <img
           style={{
             display: 'block',

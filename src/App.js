@@ -38,7 +38,7 @@ function App() {
     return <Loader />;
   }
   return (
-    <main
+    <div
       id='home'
       className={`main-container ${darkMode ? 'dark' : 'bright'} ${
         modalOpen ? 'no-scroll' : ''
@@ -79,7 +79,7 @@ function App() {
         <Contact />
       </section>
       <Footer />
-    </main>
+    </div>
   );
 }
 

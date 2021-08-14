@@ -29,75 +29,75 @@ const SkillsTools = () => {
       <div className='skill-icons'>
         <div className='icon-set'>
           <div className='icon-wrapper'>
-            <IoLogoReact className='react' />
+            <IoLogoReact aria-hidden='true' className='react' />
             <span>react</span>
           </div>
           <div className='icon-wrapper'>
-            <SiTypescript className='typescript' />
+            <SiTypescript aria-hidden='true' className='typescript' />
             <span>typescript</span>
           </div>
           <div className='icon-wrapper'>
-            <SiRedux className='typescript' />
+            <SiRedux aria-hidden='true' className='typescript' />
             <span>redux</span>
           </div>
           <div className='icon-wrapper'>
-            <IoLogoJavascript className='javascript' />
+            <IoLogoJavascript aria-hidden='true' className='javascript' />
             <span>javascript</span>
           </div>
           <div className='icon-wrapper'>
-            <IoLogoHtml5 className='html' />
+            <IoLogoHtml5 aria-hidden='true' className='html' />
             <span>html5</span>
           </div>
           <div className='icon-wrapper'>
-            <IoLogoCss3 className='css' />
+            <IoLogoCss3 aria-hidden='true' className='css' />
             <span>css3</span>
           </div>
           <div className='icon-wrapper'>
-            <SiStyledComponents className='css' />
+            <SiStyledComponents aria-hidden='true' className='css' />
             <span>styled</span>
           </div>
           <div className='icon-wrapper'>
-            <DiJqueryLogo className='jquery' />
+            <DiJqueryLogo aria-hidden='true' className='jquery' />
             <span>jquery</span>
           </div>
           <div className='icon-wrapper'>
-            <IoGitBranch className='git' />
+            <IoGitBranch aria-hidden='true' className='git' />
             <span>git</span>
           </div>
           <div className='icon-wrapper'>
-            <FaGithub className='css' />
+            <FaGithub aria-hidden='true' className='css' />
             <span>github</span>
           </div>
           <div className='icon-wrapper'>
-            <SiNpm className='html' />
+            <SiNpm aria-hidden='true' className='html' />
             <span>npm</span>
           </div>
           <div className='icon-wrapper'>
-            <IoLogoNodejs className='nodejs' />
+            <IoLogoNodejs aria-hidden='true' className='nodejs' />
             <span>nodeJS</span>
           </div>
           <div className='icon-wrapper'>
-            <IoTerminal className='terminal' />
+            <IoTerminal aria-hidden='true' className='terminal' />
             <span>terminal</span>
           </div>
           <div className='icon-wrapper'>
-            <IoLogoSass className='sass' />
+            <IoLogoSass aria-hidden='true' className='sass' />
             <span>sass</span>
           </div>
           <div className='icon-wrapper'>
-            <IoLogoFigma className='figma' />
+            <IoLogoFigma aria-hidden='true' className='figma' />
             <span>figma</span>
           </div>
           <div className='icon-wrapper'>
-            <FcMultipleDevices className='devices' />
+            <FcMultipleDevices aria-hidden='true' className='devices' />
             <span>response</span>
           </div>
           <div className='icon-wrapper'>
-            <FaAccessibleIcon className='layout' />
+            <FaAccessibleIcon aria-hidden='true' className='layout' />
             <span>a11y</span>
           </div>
           <div className='icon-wrapper'>
-            <SiVisualstudiocode className='devices' />
+            <SiVisualstudiocode aria-hidden='true' className='devices' />
             <span>vscode</span>
           </div>
         </div>

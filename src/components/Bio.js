@@ -7,12 +7,12 @@ const Bio = () => {
   return (
     <>
       <div id='about' className='about'>
-        <div
+        <span
           className='section-header sm-font'
           style={{ lineHeight: 'initial' }}
         >
           more about Osaro
-        </div>
+        </span>
         <h2>About Me</h2>
         <div>
           <p>
@@ -69,7 +69,7 @@ const Bio = () => {
           </p>
         </div>
         <span>Find me here:</span>
-        <div className='social'>
+        <div className='social-icons-wrapper'>
           <section className='bio-icon-container'>
             <a
               href='https://linkedin.com/in/osaroonaiwu'
@@ -77,6 +77,7 @@ const Bio = () => {
               target='_blank'
             >
               <FaLinkedin className={`bio-icon ${darkMode ? 'light' : ''}`} />
+              <span className='icon-text'>linkedin</span>
             </a>
             <a
               href='https://github.com/osaroDEV'
@@ -84,6 +85,7 @@ const Bio = () => {
               target='_blank'
             >
               <FaGithub className={`bio-icon ${darkMode ? 'light' : ''}`} />
+              <span className='icon-text'>github</span>
             </a>
             <a
               href='https://twitter.com/osaroDEV'
@@ -93,6 +95,7 @@ const Bio = () => {
               <FaTwitterSquare
                 className={`bio-icon ${darkMode ? 'light' : ''}`}
               />
+              <span className='icon-text'>twitter</span>
             </a>
           </section>
         </div>

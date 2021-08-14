@@ -13,11 +13,10 @@ const Header = () => {
 
   return (
     <section className='header'>
-      {/* <img src={`${darkMode?logolight:logo}`} alt='osaro-logo' /> */}
-       <a href='https://osarodev.netlify.app'> <img
+       <a href='https://osarodev.com'> <img
         className='logo'
         src={`${darkMode ? darklogo : lightlogo}`}
-        alt='osaro-logo'
+        alt='osarodev logo'
       /></a>
       <div>
         <Hamburger />
