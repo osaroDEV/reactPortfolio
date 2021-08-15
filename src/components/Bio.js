@@ -72,20 +72,30 @@ const Bio = () => {
         <div className='social-icons-wrapper'>
           <section className='bio-icon-container'>
             <a
+              // className={`${darkMode ? 'bright' : 'dark'}`}
               href='https://linkedin.com/in/osaroonaiwu'
               rel='noreferrer'
               target='_blank'
             >
-              <FaLinkedin className={`bio-icon ${darkMode ? 'light' : ''}`} />
-              <span className='icon-text'>linkedin</span>
+              <FaLinkedin
+                className={`bio-icon ${darkMode ? 'dark' : 'bright'}`}
+              />
+              <span className={`icon-text ${darkMode ? 'dark' : 'bright'}`}>
+                linkedin
+              </span>
             </a>
             <a
+              // className={`${darkMode ? 'dark' : 'bright'}`}
               href='https://github.com/osaroDEV'
               rel='noreferrer'
               target='_blank'
             >
-              <FaGithub className={`bio-icon ${darkMode ? 'light' : ''}`} />
-              <span className='icon-text'>github</span>
+              <FaGithub
+                className={`bio-icon ${darkMode ? 'dark' : 'bright'}`}
+              />
+              <span className={`icon-text ${darkMode ? 'dark' : 'bright'}`}>
+                github
+              </span>
             </a>
             <a
               href='https://twitter.com/osaroDEV'
@@ -93,9 +103,11 @@ const Bio = () => {
               target='_blank'
             >
               <FaTwitterSquare
-                className={`bio-icon ${darkMode ? 'light' : ''}`}
+                className={`bio-icon ${darkMode ? 'dark' : 'bright'}`}
               />
-              <span className='icon-text'>twitter</span>
+              <span className={`icon-text ${darkMode ? 'dark' : 'bright'}`}>
+                twitter
+              </span>
             </a>
           </section>
         </div>

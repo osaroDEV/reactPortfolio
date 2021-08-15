@@ -13,6 +13,11 @@ body {
   box-sizing: border-box;
 }
 
+* a {
+  color: inherit;
+  background-color: inherit;
+} 
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -40,6 +45,10 @@ h2 {
 }
 
 :root {
+  /* colors */
+  /* --hd-color: #5f7a61; */
+  --hd-color: #9400ff;
+  
   /* margins */
   --mg-25: 0.25em;
   --mg-5: 0.5em;
@@ -68,7 +77,7 @@ h2 {
   justify-content: center;
   align-items: center;
   /* background-image: linear-gradient(to bottom, rgb(223, 186, 20), #000); */
-  background-image: linear-gradient(to bottom, #9400ff, #000);
+  background-image: linear-gradient(to bottom, var(--hd-color), #000);
 }
 
 .no-scroll {
@@ -323,7 +332,7 @@ ul a {
 
 .link:hover {
   color: rgb(223, 186, 20);
-  border-bottom: 1px solid #9400ff;
+  border-bottom: 1px solid rgba(255, 234, 0, 0.541);
 }
 
 .no-links {
@@ -389,7 +398,7 @@ ul a {
 }
 
 .bio-a {
-  color: #9400ff;
+  color: var(--hd-color);
   text-decoration: underline;
   font-weight: 900;
 }
@@ -410,7 +419,7 @@ ul a {
   height: auto;
   min-height: 200px;
   max-height: 250px;
-  border: 10px solid#9400ff;
+  border: 10px solid var(--hd-color);
   border-radius: 50%;
   margin: auto;
   margin-bottom: 1.5em;
@@ -446,7 +455,7 @@ div .caption {
   font-weight: 900;
   margin-top: 0.5em;
   padding: 0.25em 0.5em;
-  background-color: #9400ff;
+  background-color: var(--hd-color);
   display: inline-block;
   border-radius: 0 1.28em 0 1.28em;
   text-transform: uppercase;
@@ -586,7 +595,7 @@ div .caption {
 }
 
 .sm-font {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
 }
 
 .bio-icon-container {
@@ -616,7 +625,7 @@ div .caption {
 }
 
 .bio-icon:hover {
-  color: #9400ff;
+  color: var(--hd-color);
 }
 
 .light {
@@ -742,7 +751,7 @@ textarea {
 .name-email-wrapper input:focus,
 textarea:focus {
   /* border-color: rgb(223, 186, 20); */
-  border-color: #9400ff;
+  border-color: var(--hd-color);
 }
 
 label {
@@ -821,7 +830,7 @@ label {
 }
 
 .link-email {
-  color: #9400ff;
+  color: var(--hd-color);
   text-decoration: underline;
 }
 
