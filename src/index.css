@@ -5,6 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-width: 240px;
+  background-color: red;
 }
 
 * {
@@ -17,6 +18,26 @@ body {
   color: inherit;
   background-color: inherit;
 } 
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #fff; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color:red; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #bb1450; 
+}
 
 html {
   font-size: 16px;
@@ -47,7 +68,8 @@ h2 {
 :root {
   /* colors */
   /* --hd-color: #5f7a61; */
-  --hd-color: #9400ff;
+  /* --hd-color: #9400ff; */
+  --hd-color: #bb1450;
   
   /* margins */
   --mg-25: 0.25em;
@@ -169,7 +191,7 @@ h2 {
 
 .bright {
   color: #000;
-  background-color: #fff;
+  background-color: #f3eee4;
 }
 
 .bright-color {
@@ -868,3 +890,4 @@ p a:hover {
 /*.copy:hover {
   color: rgb(223, 186, 20);
 } */
+
