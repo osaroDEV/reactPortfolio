@@ -26,12 +26,12 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background-color: #fff; 
+  background-color: #fff;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-color:red; 
+  background-color: red; 
 }
 
 /* Handle on hover */
@@ -54,15 +54,16 @@ h2 {
   margin: 0.5em 0;
   font-weight: 900;
 }
-/* @media (min-width: 750px) {
-  html {
-    font-size: 18px;
-  }
-} */
+
+
 @media (min-width: 845px) {
   html {
     font-size: 20px;
   }
+}
+
+*:focus {
+  outline: dashed 0.15rem #bb1450 !important;
 }
 
 :root {
@@ -136,12 +137,6 @@ h2 {
   /* width: 80px; */
   cursor: pointer;
 }
-
-/* .inner-header {
-  background-color: red;
-  height: 90%;
-
-} */
 
 /* theme-switch */
 .theme-container {

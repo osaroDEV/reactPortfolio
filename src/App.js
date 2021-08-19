@@ -72,8 +72,10 @@ function App() {
         <ThemeSwitch />
       </motion.span>
       <section className='content-container'>
+        <main>
         <Intro />
         <Bio />
+        </main>
         <SkillsTools />
         <Projects />
         <Contact />

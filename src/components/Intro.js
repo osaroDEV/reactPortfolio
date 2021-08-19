@@ -18,7 +18,7 @@ const Intro = () => {
         className='bio-image'
         alt=''
       />
-      <main className='caption'>
+      <div className='caption' tabindex='0'>
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -31,6 +31,7 @@ const Intro = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.25 }}
           className='name'
+          tabindex='0'
         >
           Osaro Onaiwu
         </motion.h1>
@@ -39,15 +40,17 @@ const Intro = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.3, duration: 0.22 }}
           className='title'
+          tabindex='0'
         >
           <FaRegStar className='icon-animate' />
-          <p>developer & UI/UX expert</p>
+          <p tabindex='0'>developer & UI/UX expert</p>
         </motion.div>
         <motion.p
           initial={{ opacity: 0, y: '40px' }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.6, duration: 0.19 }}
           className='brief-bio'
+          tabindex='0'
         >
           A front-end developer focused on fluency in React & Javascript
         </motion.p>
@@ -64,7 +67,7 @@ const Intro = () => {
             </div>
           </button>
         </a>
-      </main>
+      </div>
     </motion.div>
   );
 };
