@@ -14,9 +14,12 @@ import { motion } from 'framer-motion';
 
 function App() {
   const { isLoading, setIsLoading, darkMode, modalOpen } = useGlobalContext();
+  // let appItem = useRef(null)
+
+  // console.log(appItem)
 
   // useEffect(() => {
-  //   document.body.style.overflowX = 'hidden';
+  //   console.log(appItem);
   // }, []);
 
   useEffect(() => {
@@ -39,6 +42,7 @@ function App() {
   }
   return (
     <div
+      // ref={el => {appItem = el}}
       id='home'
       className={`main-container ${darkMode ? 'dark' : 'bright'} ${
         modalOpen ? 'no-scroll' : ''

@@ -5,9 +5,9 @@ import projectLinks from './projectLinks';
 
 const Projects = () => {
   return (
-    <>
+    <div id='projects'>
       {' '}
-      <span id='projects' className='section-header sm-font' style={{ lineHeight: 'initial' }}>
+      <span className='section-header sm-font' style={{ lineHeight: 'initial' }}>
         what i've been working on
       </span>
       <h2>
@@ -28,7 +28,7 @@ const Projects = () => {
           return <UnitProject key={project.id} {...project} />;
         })}
       </div>
-    </>
+    </div>
   );
 };
 

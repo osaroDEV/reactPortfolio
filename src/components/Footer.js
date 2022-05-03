@@ -10,7 +10,7 @@ const Foot = styled.div`
 const Footer = () => {
   return (
     <Foot>
-      <p>&copy;2020 Osaro Onaiwu. All rights reserved.</p>
+      <p>&copy;{new Date().getFullYear()} Osaro Onaiwu. All rights reserved.</p>
     </Foot>
   );
 };

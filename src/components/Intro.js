@@ -19,13 +19,7 @@ const Intro = () => {
         alt=''
       />
       <div className='caption' tabindex='0'>
-        <motion.span
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className='section-header'
-        >
-          Hello, I am
-        </motion.span>
+        <span className='section-header'>Hello, I am</span>
         <motion.h1
           initial={{ opacity: 0, y: '40px' }}
           animate={{ opacity: 1, y: 0 }}

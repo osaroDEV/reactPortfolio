@@ -4,6 +4,7 @@ import { useGlobalContext } from '../context';
 
 const Bio = () => {
   const { darkMode } = useGlobalContext();
+
   return (
     <>
       <div id='about' className='about'>
@@ -13,7 +14,6 @@ const Bio = () => {
         >
           more about Osaro
         </span>
-        <h2>About Me</h2>
         <div>
           <p>
             Hi there! My pseudo-name is{' '}
@@ -45,11 +45,13 @@ const Bio = () => {
             I have been honing my coding skills since and also learning a
             foreign language.
           </p>
-          <p>I am currently seeking a remote or full-time role.</p>
+          <p>
+            I am currently working as a Cloud Developer whilst seeking a remote
+            job.
+          </p>
 
           <p>
-            I can freelance, in the meantime, hence if you have an idea for a
-            website or want to upgrade the one you currently use, check the{' '}
+            I am also freelancer. Feel free to hit me up via the{' '}
             <a className='bio-a' href='#contact'>
               contact
             </a>{' '}
