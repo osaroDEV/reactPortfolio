@@ -51,7 +51,7 @@ const Bio = () => {
           </p>
 
           <p>
-            I am also freelancer. Feel free to hit me up via the{' '}
+            I also freelance. Feel free to hit me up via the{' '}
             <a className='bio-a' href='#contact'>
               contact
             </a>{' '}
