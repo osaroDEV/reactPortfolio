@@ -37,7 +37,7 @@ const Intro = () => {
           tabindex='0'
         >
           <FaRegStar className='icon-animate' />
-          <p tabindex='0'>developer & UI/UX expert</p>
+          <p tabindex='0'>frontend & cloud developer</p>
         </motion.div>
         <motion.p
           initial={{ opacity: 0, y: '40px' }}
