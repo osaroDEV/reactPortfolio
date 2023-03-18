@@ -6,7 +6,7 @@ import {
   IoLogoReact,
   IoGitBranch,
   IoLogoNodejs,
-  IoTerminal,
+  // IoTerminal,
   IoLogoSass,
   IoLogoFigma,
 } from 'react-icons/io5';
@@ -17,7 +17,7 @@ import {
   SiTypescript,
   SiRedux,
   SiStyledComponents,
-  SiVisualstudiocode,
+  // SiVisualstudiocode,
   SiNpm,
 } from 'react-icons/si';
 
@@ -29,6 +29,10 @@ const SkillsTools = () => {
       <div className='skill-icons'>
         <div className='icon-set'>
           <div className='icon-wrapper'>
+            <IoLogoJavascript aria-hidden='true' className='javascript' />
+            <span>javascript</span>
+          </div>
+          <div className='icon-wrapper'>
             <IoLogoReact aria-hidden='true' className='react' />
             <span>react</span>
           </div>
@@ -39,10 +43,6 @@ const SkillsTools = () => {
           <div className='icon-wrapper'>
             <SiRedux aria-hidden='true' className='typescript' />
             <span>redux</span>
-          </div>
-          <div className='icon-wrapper'>
-            <IoLogoJavascript aria-hidden='true' className='javascript' />
-            <span>javascript</span>
           </div>
           <div className='icon-wrapper'>
             <IoLogoHtml5 aria-hidden='true' className='html' />
@@ -76,10 +76,10 @@ const SkillsTools = () => {
             <IoLogoNodejs aria-hidden='true' className='nodejs' />
             <span>nodeJS</span>
           </div>
-          <div className='icon-wrapper'>
+          {/* <div className='icon-wrapper'>
             <IoTerminal aria-hidden='true' className='terminal' />
             <span>terminal</span>
-          </div>
+          </div> */}
           <div className='icon-wrapper'>
             <IoLogoSass aria-hidden='true' className='sass' />
             <span>sass</span>
@@ -96,10 +96,10 @@ const SkillsTools = () => {
             <FaAccessibleIcon aria-hidden='true' className='layout' />
             <span>a11y</span>
           </div>
-          <div className='icon-wrapper'>
+          {/* <div className='icon-wrapper'>
             <SiVisualstudiocode aria-hidden='true' className='devices' />
             <span>vscode</span>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ export const links = [
     name: 'About',
     url: '#about',
   },
-  { id: 2, name: 'Tools', url: '#tools' },
-  { id: 3, name: 'Projects', url: '#projects' },
+  { id: 2, name: 'Projects', url: '#projects' },
+  { id: 3, name: 'Tools', url: '#tools' },
   { id: 4, name: 'Contact', url: '#contact' },
 ];

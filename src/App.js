@@ -80,8 +80,8 @@ function App() {
         <Intro />
         <Bio />
         </main>
-        <SkillsTools />
         <Projects />
+        <SkillsTools />
         <Contact />
       </section>
       <Footer />

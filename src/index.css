@@ -30,12 +30,12 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-color: red; 
+  background-color: var(--hd-color); 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #bb1450; 
+  background-color: var(--hd-color); 
 }
 
 html {
@@ -166,7 +166,7 @@ h2 {
   width: 1.1rem;
   height: 1.1rem;
   border-radius: 50%;
-  border: 2px solid yellow;
+  border: 2px solid var(--hd-color);
   position: absolute;
   /* transform: translate(-0.1rem, 0.7rem); */
   transform: translateY(0.7rem);
@@ -342,8 +342,8 @@ ul a {
 }
 
 .link:hover {
-  color: rgb(223, 186, 20);
-  border-bottom: 1px solid rgba(255, 234, 0, 0.541);
+  color: var(--hd-color);
+  border-bottom: 1px solid var(--hd-color);
 }
 
 .no-links {
@@ -501,16 +501,14 @@ div .caption {
   margin: 1em auto auto auto;
   padding: 0.75em 0;
   border-radius: 0.375em;
-  background-color: red;
-  border: 2px solid red;
+  background-color: var(--hd-color);
+  border: 2px solid var(--hd-color);
   color: #fff;
   border: none;
   width: 80%;
   max-width: 250px;
   cursor: pointer;
   box-shadow: 0px 9px 29px rgba(252, 53, 73, 0.22);
-  /* animation: shake 1s linear infinite; */
-  /* transition: all 0.3s ease-in-out; */
 }
 
 .flexed {
@@ -525,11 +523,11 @@ div .caption {
 
 .btn:hover {
   background-color: #fff;
-  color: red;
+  color: var(--hd-color);
 }
 
 .btn:active {
-  background-color: red;
+  background-color: var(--hd-color);
   color: #fff;
   border: 2px solid #fff;
   box-shadow: 0 0 0 5px lightskyblue;

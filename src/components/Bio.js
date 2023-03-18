@@ -16,11 +16,8 @@ const Bio = () => {
         </span>
         <div>
           <p>
-            Hi there! My pseudo-name is{' '}
-            <strong style={{ textShadow: '2px 2px 2px #ecd672' }}>
-              osarodev
-            </strong>{' '}
-            and I love building things with code.
+            Hi there! My pseudo-name is <strong>osarodev</strong> and I love
+            building things with code.
           </p>
           <p>
             My first venture into coding was more than a decade ago when I got
@@ -58,7 +55,7 @@ const Bio = () => {
             section.
           </p>
           <p>
-            <strong style={{ textShadow: '2px 2px 2px #ecd672' }}>
+            <strong>
               I will help you build fast &amp; accessible websites.
             </strong>{' '}
           </p>
