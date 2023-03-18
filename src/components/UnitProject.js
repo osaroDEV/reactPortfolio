@@ -26,7 +26,7 @@ const MoreIcon = styled.div`
   right: 0;
   height: 30px;
   width: 40px;
-  background: rgb(223, 186, 20);
+  background-color: var(--hd-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +45,6 @@ const UnitProject = ({ id, title, src, url }) => {
             textAlign: 'left',
             fontWeight: 900,
             fontSize: '1.1rem',
-            textShadow: '2px 2px 2px #ecd672',
           }}
         >
           {title}
