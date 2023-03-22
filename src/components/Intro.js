@@ -4,6 +4,10 @@ import { FaFileAlt, FaRegStar } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const Intro = () => {
+  const time = new Date();
+  const hours = time.getHours();
+  let timeOfDay = (hours <= 11) ? 'evening' : (hours <= 15 && hours > 11) ? 'afternoon' : (hours > 15) ? 'evening' : '';
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -19,7 +23,7 @@ const Intro = () => {
         alt=''
       />
       <div className='caption' tabindex='0'>
-        <span className='section-header'>Hello, I am</span>
+        <span className='section-header'>Good {timeOfDay}, I am</span>
         <motion.h1
           initial={{ opacity: 0, y: '40px' }}
           animate={{ opacity: 1, y: 0 }}
