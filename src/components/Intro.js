@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const Intro = () => {
   const time = new Date();
   const hours = time.getHours();
-  let timeOfDay = (hours <= 11) ? 'evening' : (hours <= 15 && hours > 11) ? 'afternoon' : (hours > 15) ? 'evening' : '';
+  let timeOfDay = (hours <= 11) ? 'morning' : (hours <= 15 && hours > 11) ? 'afternoon' : (hours > 15) ? 'evening' : '';
 
   return (
     <motion.div
