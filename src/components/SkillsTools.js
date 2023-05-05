@@ -1,4 +1,5 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import {
   IoLogoHtml5,
   IoLogoCss3,
@@ -22,9 +23,13 @@ import {
 } from 'react-icons/si';
 
 const SkillsTools = () => {
+  const { ref, inView } = useInView();
   return (
     <div id='tools' className='skills'>
-      <div className='section-header sm-font'>my toolbox</div>
+      <div ref={ref}
+        className={`section-header sm-font ${
+          inView ? 'alt-border-curves' : null
+        }`}>my toolbox</div>
       <h2>Skills & Tools</h2>
       <div className='skill-icons'>
         <div className='icon-set'>

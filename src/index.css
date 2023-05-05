@@ -847,3 +847,25 @@ p a:hover {
   cursor: pointer;
 }
 
+.alt-border-curves {
+  animation-duration: 6s;
+  animation-name: border-curves;
+}
+
+@keyframes border-curves {
+  0% {
+    border-radius: 0 1.28em 0 1.28em;
+  }
+  25% {
+    border-radius: 1.28em 0 1.28em 0;
+  }
+  50% {
+    border-radius: 0 1.28em 0 1.28em;
+  }
+  75% {
+    border-radius: 1.28em 0 1.28em 0;
+  }
+  100% {
+    border-radius: 0 1.28em 0 1.28em;
+  }
+}

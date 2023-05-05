@@ -14,13 +14,6 @@ import { motion } from 'framer-motion';
 
 function App() {
   const { isLoading, setIsLoading, darkMode, modalOpen } = useGlobalContext();
-  // let appItem = useRef(null)
-
-  // console.log(appItem)
-
-  // useEffect(() => {
-  //   console.log(appItem);
-  // }, []);
 
   useEffect(() => {
     modalOpen

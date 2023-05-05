@@ -1,15 +1,20 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import { FaLinkedin, FaGithub, FaTwitterSquare } from 'react-icons/fa';
 import { useGlobalContext } from '../context';
 
 const Bio = () => {
+  const { ref, inView } = useInView();
   const { darkMode } = useGlobalContext();
 
   return (
     <>
       <div id='about' className='about'>
         <span
-          className='section-header sm-font'
+          ref={ref}
+          className={`section-header sm-font ${
+            inView ? 'alt-border-curves' : null
+          }`}
           style={{ lineHeight: 'initial' }}
         >
           more about Osaro
@@ -42,13 +47,12 @@ const Bio = () => {
             I have been honing my coding skills since and also learning a
             foreign language.
           </p>
-          <p>
-            I am currently working as a Cloud Developer whilst seeking a remote
-            job.
-          </p>
+          <p>I am working as a Cloud Developer whilst seeking a remote job.</p>
 
           <p>
-            I also freelance. Feel free to hit me up via the{' '}
+            Oh! I almost forgot to mention that I also{' '}
+            <strong>freelance &amp; teach frontend technologies</strong>. Feel
+            free to hit me up via the{' '}
             <a className='bio-a' href='#contact'>
               contact
             </a>{' '}

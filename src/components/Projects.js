@@ -1,18 +1,23 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import UnitProject from './UnitProject';
 import projectLinks from './projectLinks';
 
-
 const Projects = () => {
+  const { ref, inView } = useInView();
   return (
     <div id='projects'>
       {' '}
-      <span className='section-header sm-font' style={{ lineHeight: 'initial' }}>
+      <span
+        ref={ref}
+        className={`section-header sm-font ${
+          inView ? 'alt-border-curves' : null
+        }`}
+        style={{ lineHeight: 'initial' }}
+      >
         what i've been working on
       </span>
-      <h2>
-        Projects
-      </h2>
+      <h2>Projects</h2>
       <div
         style={{
           height: 'auto',

@@ -1,13 +1,18 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import { RiMailSendFill } from 'react-icons/ri';
 import { useGlobalContext } from '../context';
 
 const Contact = () => {
+  const { ref, inView } = useInView();
   const { email } = useGlobalContext();
 
   return (
     <div id='contact' className='contact'>
-      <span className='section-header sm-font'>
+      <span ref={ref}
+        className={`section-header sm-font ${
+          inView ? 'alt-border-curves' : null
+        }`}>
         let's build something together
       </span>
       <h2>Contact Me</h2>
