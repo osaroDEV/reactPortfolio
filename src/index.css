@@ -869,3 +869,9 @@ p a:hover {
     border-radius: 0 1.28em 0 1.28em;
   }
 }
+
+/* blog */
+.sort {
+  display: flex;
+  flex-direction: column-reverse;
+}
