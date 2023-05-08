@@ -11,14 +11,12 @@ import {
   IoLogoSass,
   IoLogoFigma,
 } from 'react-icons/io5';
-import { DiJqueryLogo } from 'react-icons/di';
 import { FcMultipleDevices } from 'react-icons/fc';
 import { FaAccessibleIcon, FaGithub } from 'react-icons/fa';
 import {
   SiTypescript,
   SiRedux,
-  SiStyledComponents,
-  // SiVisualstudiocode,
+  SiStyledcomponents,
   SiNpm,
 } from 'react-icons/si';
 
@@ -58,12 +56,8 @@ const SkillsTools = () => {
             <span>css3</span>
           </div>
           <div className='icon-wrapper'>
-            <SiStyledComponents aria-hidden='true' className='css' />
+            <SiStyledcomponents aria-hidden='true' className='css' />
             <span>styled</span>
-          </div>
-          <div className='icon-wrapper'>
-            <DiJqueryLogo aria-hidden='true' className='jquery' />
-            <span>jquery</span>
           </div>
           <div className='icon-wrapper'>
             <IoGitBranch aria-hidden='true' className='git' />
@@ -81,10 +75,6 @@ const SkillsTools = () => {
             <IoLogoNodejs aria-hidden='true' className='nodejs' />
             <span>nodeJS</span>
           </div>
-          {/* <div className='icon-wrapper'>
-            <IoTerminal aria-hidden='true' className='terminal' />
-            <span>terminal</span>
-          </div> */}
           <div className='icon-wrapper'>
             <IoLogoSass aria-hidden='true' className='sass' />
             <span>sass</span>
@@ -101,10 +91,6 @@ const SkillsTools = () => {
             <FaAccessibleIcon aria-hidden='true' className='layout' />
             <span>a11y</span>
           </div>
-          {/* <div className='icon-wrapper'>
-            <SiVisualstudiocode aria-hidden='true' className='devices' />
-            <span>vscode</span>
-          </div> */}
         </div>
       </div>
     </div>

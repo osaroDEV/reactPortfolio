@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
 import { FaLinkedin, FaGithub, FaTwitterSquare } from 'react-icons/fa';
 import { useGlobalContext } from '../context';
@@ -21,8 +22,7 @@ const Bio = () => {
         </span>
         <div>
           <p>
-            Hi there! My pseudo-name is <strong>osarodev</strong> and I love
-            building things with code.
+            Hi there! My pseudo-name is <strong>osarodev</strong> and I blog about code <Link to='/blog'><span className='bio-a'>here</span></Link>.
           </p>
           <p>
             My first venture into coding was more than a decade ago when I got
