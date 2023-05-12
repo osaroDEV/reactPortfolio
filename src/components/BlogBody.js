@@ -1,8 +1,8 @@
 import React from 'react'
 
-const BlogBody = () => {
+const BlogBody = ({title}) => {
   return (
-    <div>BlogBody</div>
+    <button>{title}</button>
   )
 }
 
