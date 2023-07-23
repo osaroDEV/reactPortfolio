@@ -56,7 +56,7 @@ const Intro = () => {
         </motion.p>
         <a
           className='proj'
-          href='https://drive.google.com/file/d/1-gGQ_e0lITjgFpyHemLbFODQ4A6YYpRc/view?usp=sharing'
+          href='https://drive.google.com/file/d/1PFFK2zgKze-Vep_UkxdWC6ik5J_I_eqV/view?usp=sharing'
           rel='noreferrer'
           target='_blank'
         >
