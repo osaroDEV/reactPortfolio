@@ -1,6 +1,6 @@
 import colorShade from './color-shade-generator.jpg';
 import bucketlist from './bucket-list.jpg';
-import portfolioWebsite from './portfolio-website.jpg';
+import universityWebsite from './university.jpg';
 import weatherApp from './weather-app.jpg';
 import toursApp from './tours.jpg';
 import formApp from './controlled-form.jpg';
@@ -20,9 +20,9 @@ const projectLinks = [
   },
   {
     id: 3,
-    title: 'Portfolio Website',
-    url: 'https://osarodev.com',
-    src: portfolioWebsite,
+    title: 'University Website',
+    url: 'https://school-app-osarodev.vercel.app/',
+    src: universityWebsite,
   },
   {
     id: 4,
