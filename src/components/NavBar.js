@@ -3,12 +3,12 @@ import { links } from './links';
 import { useGlobalContext } from '../context';
 
 const NavBar = () => {
-  const { darkMode, modalOpen, setModalOpen } = useGlobalContext();
+  const { themeMode, modalOpen, setModalOpen } = useGlobalContext();
 
   return (
     <section
       className={`modal-container ${modalOpen ? 'full-modal-container' : ''} ${
-        darkMode && modalOpen ? 'modal-dark' : 'modal-bright'
+        themeMode && modalOpen ? 'modal-dark' : 'modal-bright'
       }`}
     >
       <ul className={`modal-content ${modalOpen ? 'full-modal-content' : ''}`}>
@@ -19,7 +19,7 @@ const NavBar = () => {
               href={url}
               key={id}
               className={`link ${
-                darkMode && modalOpen ? 'li-dark-color' : 'li-bright-color'
+                themeMode && modalOpen ? 'li-dark-color' : 'li-bright-color'
               }`}
               onClick={() => setModalOpen(false)}
             >

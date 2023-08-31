@@ -3,16 +3,15 @@ import { FaMoon, FaSun } from 'react-icons/fa';
 import { useGlobalContext } from '../context';
 
 const ThemeSwitch = () => {
-  const { darkMode, setDarkMode } = useGlobalContext();
+  const { handleTheme, themeMode } = useGlobalContext();
   return (
     <div
-      className={`theme-container ${darkMode ? 'darkContainer' : ''}`}
-      onClick={() => setDarkMode(!darkMode)}
+      className={`theme-container ${themeMode ? 'darkContainer' : ''}`}
+      onClick={handleTheme}
     >
         <FaMoon className='moon' />
-      <div className={`switch ${darkMode ? 'move' : ''} `}></div>
+      <div className={`switch ${themeMode ? 'move' : ''} `}></div>
         <FaSun className='sun' />
-      
     </div>
   );
 };

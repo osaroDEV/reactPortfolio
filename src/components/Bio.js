@@ -6,7 +6,7 @@ import { useGlobalContext } from '../context';
 
 const Bio = () => {
   const { ref, inView } = useInView();
-  const { darkMode } = useGlobalContext();
+  const { themeMode } = useGlobalContext();
 
   return (
     <>
@@ -75,28 +75,26 @@ const Bio = () => {
         <div className='social-icons-wrapper'>
           <section className='bio-icon-container'>
             <a
-              // className={`${darkMode ? 'bright' : 'dark'}`}
               href='https://linkedin.com/in/osaroonaiwu'
               rel='noreferrer'
               target='_blank'
             >
               <FaLinkedin
-                className={`bio-icon ${darkMode ? 'dark' : 'bright'}`}
+                className={`bio-icon ${themeMode ? 'dark' : 'bright'}`}
               />
-              <span className={`icon-text ${darkMode ? 'dark' : 'bright'}`}>
+              <span className={`icon-text ${themeMode ? 'dark' : 'bright'}`}>
                 linkedin
               </span>
             </a>
             <a
-              // className={`${darkMode ? 'dark' : 'bright'}`}
               href='https://github.com/osaroDEV'
               rel='noreferrer'
               target='_blank'
             >
               <FaGithub
-                className={`bio-icon ${darkMode ? 'dark' : 'bright'}`}
+                className={`bio-icon ${themeMode ? 'dark' : 'bright'}`}
               />
-              <span className={`icon-text ${darkMode ? 'dark' : 'bright'}`}>
+              <span className={`icon-text ${themeMode ? 'dark' : 'bright'}`}>
                 github
               </span>
             </a>
@@ -106,9 +104,9 @@ const Bio = () => {
               target='_blank'
             >
               <FaTwitterSquare
-                className={`bio-icon ${darkMode ? 'dark' : 'bright'}`}
+                className={`bio-icon ${themeMode ? 'dark' : 'bright'}`}
               />
-              <span className={`icon-text ${darkMode ? 'dark' : 'bright'}`}>
+              <span className={`icon-text ${themeMode ? 'dark' : 'bright'}`}>
                 twitter
               </span>
             </a>

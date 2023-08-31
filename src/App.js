@@ -13,7 +13,7 @@ import ThemeSwitch from './components/ThemeSwitch';
 import { motion } from 'framer-motion';
 
 function App() {
-  const { isLoading, setIsLoading, darkMode, modalOpen } = useGlobalContext();
+  const { isLoading, setIsLoading, themeMode, modalOpen } = useGlobalContext();
 
   useEffect(() => {
     modalOpen
@@ -35,31 +35,23 @@ function App() {
   }
   return (
     <div
-      // ref={el => {appItem = el}}
       id='home'
-      className={`main-container ${darkMode ? 'dark' : 'bright'} ${
+      className={`main-container ${themeMode ? 'dark' : 'bright'} ${
         modalOpen ? 'no-scroll' : ''
       }`}
     >
       <Header />
-      {/* <motion.span
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-        className='fixed-container-arrow'
-      > */}
       <motion.a
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
         className={`fixed-container-arrow up-icon ${
-          darkMode ? 'dark-color' : 'bright-color'
+          themeMode ? 'dark-color' : 'bright-color'
         }`}
         href='#top'
       >
         <CgChevronUpO className='up-icon' />
       </motion.a>
-      {/* </motion.span> */}
       <motion.span
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

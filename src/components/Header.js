@@ -6,7 +6,7 @@ import darklogo from './darklogo.png';
 import { useGlobalContext } from '../context';
 
 const Header = () => {
-  const { darkMode } = useGlobalContext();
+  const { themeMode } = useGlobalContext();
 
   return (
     <section className='header'>
@@ -14,7 +14,7 @@ const Header = () => {
         {' '}
         <img
           className='logo'
-          src={`${darkMode ? darklogo : lightlogo}`}
+          src={`${themeMode ? darklogo : lightlogo}`}
           alt='osarodev logo'
         />
       </a>

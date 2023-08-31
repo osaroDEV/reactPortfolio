@@ -6,8 +6,13 @@ const AppContext = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [isHover, setIsHover] = useState(false);
-  // const [seeMore, setSeeMore] = useState(false);
-  const email= 'osaronaiwu@yahoo.com';  
+  const email= 'osaronaiwu@yahoo.com';
+  const themeMode = JSON.parse(localStorage.getItem('themeMode'));
+
+  const handleTheme = () => {
+    setDarkMode(!darkMode)
+    localStorage.setItem('themeMode', darkMode)
+  }
 
   return (
     <ContextProvider.Provider
@@ -20,7 +25,9 @@ const AppContext = ({ children }) => {
         setModalOpen,
         setIsHover,
         isHover,
-        email
+        email,
+        themeMode,
+        handleTheme
       }}
     >
       {children}
